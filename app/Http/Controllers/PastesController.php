@@ -34,9 +34,9 @@ class PastesController extends Controller
         return view('edit', compact('paste'));
     }
 
-    public function fork(PasteRequest $request, Paste $fork)
+    public function fork(PasteRequest $request, Paste $paste)
     {
-        $paste = Paste::fromFork($fork, $request);
+        $paste = Paste::fromFork($paste, $request);
 
         return redirect()->route('show', $paste->hash);
     }
