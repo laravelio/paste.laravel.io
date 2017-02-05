@@ -1,0 +1,1 @@
+<pre>{{ $paste->code }}</pre>

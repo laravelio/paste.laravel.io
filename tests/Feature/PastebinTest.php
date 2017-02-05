@@ -35,4 +35,13 @@ class PastebinTest extends TestCase
         $this->get("/{$paste->hash}")
             ->assertSee(e($paste->code));
     }
+
+    /** @test */
+    public function users_can_see_raw_pastes()
+    {
+        $paste = factory(Paste::class)->create();
+
+        $this->get("/{$paste->hash}/raw")
+            ->assertSee(e($paste->code));
+    }
 }

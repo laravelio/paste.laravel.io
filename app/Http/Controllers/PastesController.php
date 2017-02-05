@@ -32,15 +32,18 @@ class PastesController extends Controller
         return view('show', compact('paste'));
     }
 
+    public function raw($hash)
+    {
+        $paste = Paste::where('hash', $hash)->firstOrFail();
+
+        return view('raw', compact('paste'));
+    }
+
     public function edit($hash)
     {
     }
 
     public function fork($hash)
-    {
-    }
-
-    public function raw($hash)
     {
     }
 }
