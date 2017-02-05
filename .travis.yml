@@ -4,6 +4,10 @@ php: 7.1
 
 sudo: false
 
+cache:
+  directories:
+    - vendor
+
 before_script:
   - composer self-update
   - composer install
