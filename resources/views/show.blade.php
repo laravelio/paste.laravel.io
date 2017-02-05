@@ -22,7 +22,7 @@
 
     <div class="show-container">
         <pre class="prettyprint linenums selectable">
-{{{ $paste->code }}}
+{{ $paste->code }}
         </pre>
     </div>
 @stop

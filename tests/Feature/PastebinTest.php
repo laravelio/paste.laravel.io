@@ -2,6 +2,7 @@
 
 namespace Tests\Feature;
 
+use App\Paste;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -24,5 +25,14 @@ class PastebinTest extends TestCase
         $this->post('/', ['code' => 'My paste'])->assertStatus(302);
 
         $this->assertDatabaseHas('pastes', ['code' => 'My paste']);
+    }
+
+    /** @test */
+    public function users_can_see_pastes()
+    {
+        $paste = factory(Paste::class)->create();
+
+        $this->get("/{$paste->hash}")
+            ->assertSee(e($paste->code));
     }
 }
