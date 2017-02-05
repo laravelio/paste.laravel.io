@@ -44,4 +44,24 @@ class PastebinTest extends TestCase
         $this->get("/{$paste->hash}/raw")
             ->assertSee(e($paste->code));
     }
+
+    /** @test */
+    public function users_can_see_the_fork_page()
+    {
+        $paste = factory(Paste::class)->create();
+
+        $this->get("/fork/{$paste->hash}")
+            ->assertSee(e($paste->code));
+    }
+
+    /** @test */
+    public function users_can_fork_pastes()
+    {
+        $paste = factory(Paste::class)->create();
+
+        $this->post("/fork/{$paste->hash}", ['code' => 'foo code'])
+            ->assertStatus(302);
+
+        $this->assertDatabaseHas('pastes', ['code' => 'foo code']);
+    }
 }

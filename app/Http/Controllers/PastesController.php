@@ -41,9 +41,24 @@ class PastesController extends Controller
 
     public function edit($hash)
     {
+        $paste = Paste::where('hash', $hash)->firstOrFail();
+
+        return view('edit', compact('paste'));
     }
 
     public function fork($hash)
     {
+        $forkedPaste = Paste::where('hash', $hash)->firstOrFail();
+
+        $paste = new Paste();
+        $paste->code = request('code');
+        $paste->ip = request()->ip();
+        $paste->parent_id = $forkedPaste->id;
+        $paste->save();
+
+        $paste->hash = (new Hashids('Lio Pastebin', 5))->encode($paste->id);
+        $paste->save();
+
+        return redirect()->route('show', $paste->hash);
     }
 }

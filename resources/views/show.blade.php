@@ -11,8 +11,6 @@
                 <li><a href="{{ route('home') }}" class="button new">New (N)</a></li>
                 <li><a href="{{ route('edit', $paste->hash) }}" class="button fork">Fork (F)</a></li>
                 <li><a target="_blank" href="{{ route('raw', $paste->hash) }}" class="button raw">Raw (R)</a></li>
-                <li><button class="button copy" id="copy-button">Copy URL (CMD/CTRL+C)</button></li>
-                <input type="text" id="copy-data" class="hidden" value="{{ route('show', $paste->hash) }}" readonly="readonly">
             </ul>
         </div>
         <p>Please note that all pasted data is publicly available.</p>
