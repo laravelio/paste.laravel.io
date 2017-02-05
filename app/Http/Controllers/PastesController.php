@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\PasteRequest;
 use App\Paste;
-use Hashids\Hashids;
 
 class PastesController extends Controller
 {
@@ -12,52 +12,31 @@ class PastesController extends Controller
         return view('create');
     }
 
-    public function post()
+    public function post(PasteRequest $request)
     {
-        $paste = new Paste();
-        $paste->code = request('code');
-        $paste->ip = request()->ip();
-        $paste->save();
-
-        $paste->hash = (new Hashids('Lio Pastebin', 5))->encode($paste->id);
-        $paste->save();
+        $paste = Paste::fromRequest($request);
 
         return redirect()->route('show', $paste->hash);
     }
 
-    public function show($hash)
+    public function show(Paste $paste)
     {
-        $paste = Paste::where('hash', $hash)->firstOrFail();
-
         return view('show', compact('paste'));
     }
 
-    public function raw($hash)
+    public function raw(Paste $paste)
     {
-        $paste = Paste::where('hash', $hash)->firstOrFail();
-
         return view('raw', compact('paste'));
     }
 
-    public function edit($hash)
+    public function edit(Paste $paste)
     {
-        $paste = Paste::where('hash', $hash)->firstOrFail();
-
         return view('edit', compact('paste'));
     }
 
-    public function fork($hash)
+    public function fork(PasteRequest $request, Paste $fork)
     {
-        $forkedPaste = Paste::where('hash', $hash)->firstOrFail();
-
-        $paste = new Paste();
-        $paste->code = request('code');
-        $paste->ip = request()->ip();
-        $paste->parent_id = $forkedPaste->id;
-        $paste->save();
-
-        $paste->hash = (new Hashids('Lio Pastebin', 5))->encode($paste->id);
-        $paste->save();
+        $paste = Paste::fromFork($fork, $request);
 
         return redirect()->route('show', $paste->hash);
     }
