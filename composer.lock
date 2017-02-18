@@ -4,9 +4,241 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "610b22e2b8d5a22b09efcae26f9868cc",
-    "content-hash": "45ced74d1c2434c31b1996f586c6fcc2",
+    "hash": "270814fc591bec4c5b7a2e4126a6bd2f",
+    "content-hash": "a071f1643fc6664dfc3a0e4dd9b71f0d",
     "packages": [
+        {
+            "name": "bugsnag/bugsnag",
+            "version": "v3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-php.git",
+                "reference": "c3b05a18f9116ac7cb4984fd7ee0614fe4490176"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-php/zipball/c3b05a18f9116ac7cb4984fd7ee0614fe4490176",
+                "reference": "c3b05a18f9116ac7cb4984fd7ee0614fe4490176",
+                "shasum": ""
+            },
+            "require": {
+                "composer/ca-bundle": "^1.0",
+                "guzzlehttp/guzzle": "^5.0|^6.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "mtdowling/burgomaster": "dev-master#72151eddf5f0cf101502b94bf5031f9c53501a04",
+                "php-mock/php-mock-phpunit": "^1.1",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for PHP applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-php",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "tracking"
+            ],
+            "time": "2016-09-05 15:23:22"
+        },
+        {
+            "name": "bugsnag/bugsnag-laravel",
+            "version": "v2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-laravel.git",
+                "reference": "b067bef4e2d87b92d4d554d511b7b262af17586d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-laravel/zipball/b067bef4e2d87b92d4d554d511b7b262af17586d",
+                "reference": "b067bef4e2d87b92d4d554d511b7b262af17586d",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": "^3.4",
+                "bugsnag/bugsnag-psr-logger": "^1.1",
+                "illuminate/contracts": "^5.0",
+                "illuminate/support": "^5.0",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "graham-campbell/testbench": "^3.1",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\BugsnagLaravel\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag notifier for Laravel applications.",
+            "homepage": "https://github.com/bugsnag/bugsnag-laravel",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "laravel",
+                "logging",
+                "tracking"
+            ],
+            "time": "2016-09-08 08:33:45"
+        },
+        {
+            "name": "bugsnag/bugsnag-psr-logger",
+            "version": "v1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/bugsnag/bugsnag-psr-logger.git",
+                "reference": "355989a16373936a7854ac26cea46d9dd80f0371"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/bugsnag/bugsnag-psr-logger/zipball/355989a16373936a7854ac26cea46d9dd80f0371",
+                "reference": "355989a16373936a7854ac26cea46d9dd80f0371",
+                "shasum": ""
+            },
+            "require": {
+                "bugsnag/bugsnag": "^3.2",
+                "php": ">=5.5",
+                "psr/log": "^1.0"
+            },
+            "require-dev": {
+                "graham-campbell/testbench-core": "^1.1",
+                "mockery/mockery": "^0.9.4",
+                "phpunit/phpunit": "^4.8|^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Bugsnag\\PsrLogger\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "James Smith",
+                    "email": "notifiers@bugsnag.com",
+                    "homepage": "https://bugsnag.com"
+                }
+            ],
+            "description": "Official Bugsnag PHP PSR Logger.",
+            "homepage": "https://github.com/bugsnag/bugsnag-psr",
+            "keywords": [
+                "bugsnag",
+                "errors",
+                "exceptions",
+                "logging",
+                "psr",
+                "tracking"
+            ],
+            "time": "2016-08-09 08:02:38"
+        },
+        {
+            "name": "composer/ca-bundle",
+            "version": "1.0.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/ca-bundle.git",
+                "reference": "a795611394b3c05164fd0eb291b492b39339cba4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/ca-bundle/zipball/a795611394b3c05164fd0eb291b492b39339cba4",
+                "reference": "a795611394b3c05164fd0eb291b492b39339cba4",
+                "shasum": ""
+            },
+            "require": {
+                "ext-openssl": "*",
+                "ext-pcre": "*",
+                "php": "^5.3.2 || ^7.0"
+            },
+            "require-dev": {
+                "psr/log": "^1.0",
+                "symfony/process": "^2.5 || ^3.0"
+            },
+            "suggest": {
+                "symfony/process": "This is necessary to reliably check whether openssl_x509_parse is vulnerable on older php versions, but can be ignored on PHP 5.5.6+"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Composer\\CaBundle\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be"
+                }
+            ],
+            "description": "Lets you find a path to the system CA bundle, and includes a fallback to the Mozilla CA bundle.",
+            "keywords": [
+                "cabundle",
+                "cacert",
+                "certificate",
+                "ssl",
+                "tls"
+            ],
+            "time": "2016-11-02 18:11:27"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -148,6 +380,177 @@
                 "parser"
             ],
             "time": "2016-11-02 15:56:58"
+        },
+        {
+            "name": "guzzlehttp/guzzle",
+            "version": "6.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/guzzle.git",
+                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
+                "reference": "ebf29dee597f02f09f4d5bbecc68230ea9b08f60",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/promises": "^1.0",
+                "guzzlehttp/psr7": "^1.3.1",
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "ext-curl": "*",
+                "phpunit/phpunit": "^4.0",
+                "psr/log": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "6.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/functions_include.php"
+                ],
+                "psr-4": {
+                    "GuzzleHttp\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle is a PHP HTTP client library",
+            "homepage": "http://guzzlephp.org/",
+            "keywords": [
+                "client",
+                "curl",
+                "framework",
+                "http",
+                "http client",
+                "rest",
+                "web service"
+            ],
+            "time": "2016-10-08 15:01:37"
+        },
+        {
+            "name": "guzzlehttp/promises",
+            "version": "v1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/promises.git",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "reference": "a59da6cf61d80060647ff4d3eb2c03a2bc694646",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Promise\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "Guzzle promises library",
+            "keywords": [
+                "promise"
+            ],
+            "time": "2016-12-20 10:07:11"
+        },
+        {
+            "name": "guzzlehttp/psr7",
+            "version": "1.3.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/guzzle/psr7.git",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "reference": "5c6447c9df362e8f8093bda8f5d8873fe5c7f65b",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0",
+                "psr/http-message": "~1.0"
+            },
+            "provide": {
+                "psr/http-message-implementation": "1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GuzzleHttp\\Psr7\\": "src/"
+                },
+                "files": [
+                    "src/functions_include.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com",
+                    "homepage": "https://github.com/mtdowling"
+                }
+            ],
+            "description": "PSR-7 message implementation",
+            "keywords": [
+                "http",
+                "message",
+                "stream",
+                "uri"
+            ],
+            "time": "2016-06-24 23:00:38"
         },
         {
             "name": "hashids/hashids",
@@ -896,6 +1299,56 @@
                 "random"
             ],
             "time": "2016-11-07 23:38:38"
+        },
+        {
+            "name": "psr/http-message",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-message.git",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Message\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP messages",
+            "homepage": "https://github.com/php-fig/http-message",
+            "keywords": [
+                "http",
+                "http-message",
+                "psr",
+                "psr-7",
+                "request",
+                "response"
+            ],
+            "time": "2016-08-06 14:39:51"
         },
         {
             "name": "psr/log",

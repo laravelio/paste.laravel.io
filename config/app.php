@@ -166,6 +166,7 @@ return [
         /*
          * Package Service Providers...
          */
+        Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
         Laravel\Tinker\TinkerServiceProvider::class,
 
@@ -228,6 +229,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Form' => Collective\Html\FormFacade::class,
+        'Bugsnag' => Bugsnag\BugsnagLaravel\Facades\Bugsnag::class,
 
     ],
 
