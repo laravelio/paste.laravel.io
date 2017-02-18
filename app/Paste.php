@@ -3,8 +3,8 @@
 namespace App;
 
 use Hashids\Hashids;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 
 class Paste extends Model
 {
