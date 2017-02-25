@@ -13,3 +13,9 @@ before_script:
   - composer install
 
 script: vendor/bin/phpunit
+
+deploy:
+  provider: script
+  script: curl $ENVOYER_DEPLOYMENT_HOOK
+  on:
+    branch: master
