@@ -4,6 +4,9 @@ php: 7.1
 
 sudo: false
 
+env:
+  - APP_KEY=base64:xIqp823QoWI8aYcDVlMpLlhFDodhCIFpwh0VQe6CEtg=
+
 cache:
   directories:
     - vendor

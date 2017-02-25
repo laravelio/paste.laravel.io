@@ -18,7 +18,7 @@
 
             @include('_cartalyst-ad')
         </div>
-foo
+
         @include('_editor')
     {!! Form::close() !!}
 @stop
