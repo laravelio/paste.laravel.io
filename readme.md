@@ -32,35 +32,27 @@ Please make sure you install the following tools before starting with the instal
 4. SSH into your Vagrant box, go to `/home/vagrant/pastebin` and run the following commands:
     1. `composer install`
     2. `php artisan migrate`
-5. Add `192.168.10.30 pastebin.loc` to your computer's `/etc/hosts` file
+5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file
 
 ```yaml
----
-ip: "192.168.10.30"
+ip: 192.168.10.30
 memory: 2048
 cpus: 1
-hostname: pastebin
-name: pastebin
 provider: virtualbox
-
 authorize: ~/.ssh/id_rsa.pub
-
 keys:
     - ~/.ssh/id_rsa
-
 folders:
-    - map: "~/Sites/pastebin"
-      to: "/home/vagrant/pastebin"
-
+    - { map: ~/Sites/pastebin, to: /home/vagrant/pastebin }
 sites:
-    - map: pastebin.loc
-      to: "/home/vagrant/pastebin/public"
-
+    - { map: pastebin.app, to: /home/vagrant/pastebin/public }
 databases:
     - homestead
+name: pastebin
+hostname: pastebin
 ```
 
-You can now visit the app in your browser by visiting [http://pastebin.loc/](http://pastebin.loc).
+You can now visit the app in your browser by visiting [http://pastebin.app/](http://pastebin.app).
 
 ## Maintainers
 
