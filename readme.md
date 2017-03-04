@@ -1,6 +1,7 @@
 # Laravel.io Pastebin
 
 <img src="https://travis-ci.org/laravelio/pastebin.svg?branch=master" alt="Build Status">
+[![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](license.txt)
 
 This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.txt). Feel free to contribute to the pastebin by sending in a pull request.
