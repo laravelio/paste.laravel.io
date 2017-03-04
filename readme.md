@@ -4,6 +4,7 @@
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Code Climate](https://lima.codeclimate.com/github/laravelio/pastebin/badges/gpa.svg)](https://lima.codeclimate.com/github/laravelio/pastebin)
 [![Test Coverage](https://lima.codeclimate.com/github/laravelio/pastebin/badges/coverage.svg)](https://lima.codeclimate.com/github/laravelio/pastebin/coverage)
+[![SensioLabsInsight](https://insight.sensiolabs.com/projects/6c1df3e8-3e43-40c4-be31-65dfd9a2030b/mini.png)](https://insight.sensiolabs.com/projects/6c1df3e8-3e43-40c4-be31-65dfd9a2030b)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](license.txt)
 
 This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.txt). Feel free to contribute to the pastebin by sending in a pull request.
