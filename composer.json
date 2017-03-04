@@ -13,6 +13,7 @@
         "laravelcollective/html": "5.4.*"
     },
     "require-dev": {
+        "codeclimate/php-test-reporter": "^0.4.4",
         "fzaninotto/faker": "^1.6",
         "laravel/homestead": "^5.0",
         "mockery/mockery": "0.9.*",
