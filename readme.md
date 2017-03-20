@@ -1,6 +1,6 @@
 # Laravel.io Pastebin
 
-<img src="https://travis-ci.org/laravelio/pastebin.svg?branch=master" alt="Build Status">
+[![Build Status](https://travis-ci.org/laravelio/pastebin.svg?branch=master)](https://travis-ci.org/laravelio/pastebin)
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Code Climate](https://lima.codeclimate.com/github/laravelio/pastebin/badges/gpa.svg)](https://lima.codeclimate.com/github/laravelio/pastebin)
 [![Test Coverage](https://lima.codeclimate.com/github/laravelio/pastebin/badges/coverage.svg)](https://lima.codeclimate.com/github/laravelio/pastebin/coverage)
