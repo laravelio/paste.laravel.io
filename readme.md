@@ -1,4 +1,4 @@
-# Laravel.io Pastebin
+# Laravel.io Pastebin - [![Laravel Version](https://shield.with.social/cc/github/laravelio/pastebin/master.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
 [![Build Status](https://travis-ci.org/laravelio/pastebin.svg?branch=master)](https://travis-ci.org/laravelio/pastebin)
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
