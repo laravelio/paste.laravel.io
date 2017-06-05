@@ -4,9 +4,9 @@ We welcome contributions to the Laravel.io project. Please read the following gu
 
 ## Issues
 
-- **Feature requests**: try to describe as thoroughly as possible the feature you'd like to have. Perhaps also give some info on how you want to implement it
-- **Bug reports**: describe in detail what the problem is and how it was triggered. Perhaps give a possible solution
-- **Questions**: Feel free to as questions about the internals of the codebase and other related questions about the project
+- **Feature requests** need to describe as thoroughly as possible and perhaps contain some info on how you would implement it
+- **Bug reports** need to be described in detail what the problem is, how it was triggered and perhaps contain a possible solution
+- **Questions** are free to be asked about the internals of the codebase and about the project
 
 ## Pull Requests
 
