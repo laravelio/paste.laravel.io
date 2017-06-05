@@ -15,7 +15,7 @@ class Paste extends Model
 
     public static function fromRequest(Request $request): Paste
     {
-        return static::create(new static(), $request);
+        return static::createNew(new static(), $request);
     }
 
     public static function fromFork(Paste $fork, Request $request): Paste
@@ -23,10 +23,10 @@ class Paste extends Model
         $paste = new static();
         $paste->parent_id = $fork->id;
 
-        return static::create($paste, $request);
+        return static::createNew($paste, $request);
     }
 
-    private static function create(Paste $paste, Request $request): Paste
+    private static function createNew(Paste $paste, Request $request): Paste
     {
         $paste->code = $request->get('code');
         $paste->ip = $request->ip();
