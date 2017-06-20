@@ -18,7 +18,7 @@ class PastesController extends Controller
         try {
             $paste = Paste::fromRequest($request);
         } catch (QueryException $e) {
-            $request->session()->flash('editor_error','Data entered was too long');
+            $request->session()->flash('editor_error', 'Data entered was too long');
 
             return redirect('/')->withInput();
         }
@@ -46,7 +46,7 @@ class PastesController extends Controller
         try {
             $paste = Paste::fromFork($paste, $request);
         } catch (QueryException $e) {
-            $request->session()->flash('editor_error','Data entered was too long');
+            $request->session()->flash('editor_error', 'Data entered was too long');
 
             return redirect('/')->withInput();
         }
