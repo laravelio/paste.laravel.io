@@ -8,6 +8,7 @@
             @include('_logo')
 
             <div class="options">
+                @include('_errors')
                 <ul>
                     <li><input type="submit" value="Save (CMD/CTRL+S)" class="button"></li>
                     <li><input type="reset" value="Clear" class="button"></li>
