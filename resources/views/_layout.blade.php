@@ -15,6 +15,7 @@
     <script src="{{ asset('legacy/custom.modernizr.js') }}"></script>
 
     @include('_google_analytics')
+    @include('_fav_icons')
 </head>
 <body class="bin" onload="prettyPrint()">
 
