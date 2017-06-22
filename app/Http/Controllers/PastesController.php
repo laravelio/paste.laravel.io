@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Paste;
 use App\Http\Requests\PasteRequest;
+use Illuminate\Database\QueryException;
 
 class PastesController extends Controller
 {
@@ -14,7 +15,13 @@ class PastesController extends Controller
 
     public function post(PasteRequest $request)
     {
-        $paste = Paste::fromRequest($request);
+        try {
+            $paste = Paste::fromRequest($request);
+        } catch (QueryException $e) {
+            $request->session()->flash('editor_error', 'Data entered was too long');
+
+            return redirect('/')->withInput();
+        }
 
         return redirect()->route('show', $paste->hash);
     }
@@ -36,7 +43,13 @@ class PastesController extends Controller
 
     public function fork(PasteRequest $request, Paste $paste)
     {
-        $paste = Paste::fromFork($paste, $request);
+        try {
+            $paste = Paste::fromFork($paste, $request);
+        } catch (QueryException $e) {
+            $request->session()->flash('editor_error', 'Data entered was too long');
+
+            return redirect('/')->withInput();
+        }
 
         return redirect()->route('show', $paste->hash);
     }
