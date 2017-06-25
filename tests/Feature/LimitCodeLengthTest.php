@@ -9,11 +9,10 @@ class LimitCodeLengthTest extends TestCase
     /** @test */
     public function it_disallows_long_code_posts()
     {
-        $long_text = file_get_contents(__DIR__.'/../artifacts/LongText.txt');
+        $code = file_get_contents(__DIR__.'/../artifacts/long_text.txt');
 
-        $this->post('/', ['code' => $long_text])
-            ->assertStatus(302)
-            ->assertSessionHas('editor_error', 'Data entered was too long')
+        $this->post('/', compact('code'))
+            ->assertSessionHasErrors('code')
             ->assertRedirect('/');
     }
 }
