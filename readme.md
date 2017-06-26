@@ -31,16 +31,14 @@ Please make sure you install the following tools before starting with the instal
 > Note that you're free to adjust the `~/Code/pastebin` location that will be in the `Homestead.yaml` to any directory you want on your machine.
 
 1. Clone this repository: `git clone git@github.com:laravelio/pastebin.git pastebin`
-2. Run `./vendor/bin/homestead make`
+2. Run `./vendor/bin/homestead make --no-after`
 3. Run `vagrant up`
 4. SSH into your Vagrant box, go to `/home/vagrant/Code/pastebin` and run the following commands:
     1. `composer install`
-    2. `cp .env.example .env`
-    3. `php artisan key:generate`
-    4. `php artisan migrate`
-5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file. (optional)
+    3. `php artisan migrate`
+5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file.
 
-You can now visit the app in your browser by visiting [http://pastebin.app/](http://pastebin.app) or [http://localhost:8000/](http://localhost:8000) if you prefer to not edit your hosts file.
+You can now visit the app in your browser by visiting [http://pastebin.app/](http://pastebin.app).
 
 ## Maintainers
 

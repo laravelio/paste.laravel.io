@@ -6,7 +6,7 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    - { map: ~/PhpstormProjects/pastebin, to: /home/vagrant/pastebin }
+    - { map: ~/Sites/pastebin, to: /home/vagrant/pastebin }
 sites:
     - { map: pastebin.app, to: /home/vagrant/pastebin/public }
 databases:
