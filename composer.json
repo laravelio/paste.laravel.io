@@ -10,7 +10,8 @@
         "hashids/hashids": "^2.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
-        "laravelcollective/html": "5.4.*"
+        "laravelcollective/html": "5.4.*",
+        "roave/security-advisories": "dev-master"
     },
     "require-dev": {
         "codeclimate/php-test-reporter": "^0.4.4",

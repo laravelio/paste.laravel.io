@@ -8,6 +8,7 @@
             @include('_logo')
 
             <div class="options">
+                {!! $errors->first('code', '<p>:message</p><br>') !!}
                 <ul>
                     <li><input type="submit" value="Save (CMD+S)" class="button"></li>
                     <li><input type="reset" value="Clear" class="button"></li>
