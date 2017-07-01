@@ -35,8 +35,8 @@ Please make sure you install the following tools before starting with the instal
 3. Run `vagrant up`
 4. SSH into your Vagrant box, go to `/home/vagrant/Code/pastebin` and run the following commands:
     1. `composer install`
-    3. `php artisan migrate`
-5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file.
+    2. `php artisan migrate`
+5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file
 
 You can now visit the app in your browser by visiting [http://pastebin.app/](http://pastebin.app).
 
