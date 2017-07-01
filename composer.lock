@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "49fcc7d296ccc2806c156fc229ad041e",
+    "content-hash": "10c4967a5c4ad04c407e38d18c26d43d",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -2868,16 +2868,16 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v5.0.1",
+            "version": "v5.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "af6ba5202e8c3e1f377fd748cbe7a7d8c1ba4d22"
+                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/af6ba5202e8c3e1f377fd748cbe7a7d8c1ba4d22",
-                "reference": "af6ba5202e8c3e1f377fd748cbe7a7d8c1ba4d22",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
+                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
                 "shasum": ""
             },
             "require": {
@@ -2914,7 +2914,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2017-02-28T13:26:35+00:00"
+            "time": "2017-06-09T13:53:37+00:00"
         },
         {
             "name": "mockery/mockery",
