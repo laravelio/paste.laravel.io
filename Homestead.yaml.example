@@ -1,0 +1,15 @@
+ip: 192.168.10.30
+memory: 2048
+cpus: 1
+provider: virtualbox
+authorize: ~/.ssh/id_rsa.pub
+keys:
+    - ~/.ssh/id_rsa
+folders:
+    - { map: ~/Sites/pastebin, to: /home/vagrant/Code/pastebin }
+sites:
+    - { map: pastebin.app, to: /home/vagrant/Code/pastebin/public }
+databases:
+    - homestead
+name: pastebin
+hostname: pastebin
