@@ -28,7 +28,7 @@ Please make sure you install the following tools before starting with the instal
 
 ## Installation
 
-> Note that you're free to adjust the `~/Code/pastebin` location that will be in the `Homestead.yaml` to any directory you want on your machine.
+> Note that you're free to adjust the `~/Sites/pastebin` path in the `Homestead.yaml` file to any directory you want on your machine.
 
 1. Clone this repository: `git clone git@github.com:laravelio/pastebin.git pastebin`
 2. Run `./vendor/bin/homestead make --no-after`
