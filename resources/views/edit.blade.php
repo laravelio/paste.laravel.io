@@ -20,6 +20,8 @@
                 </ul>
             </div>
             <p>Please note that all pasted data is publicly available.</p>
+
+            @include('_ad_slot')
         </div>
 
         @include('_editor')

@@ -14,6 +14,8 @@
             </ul>
         </div>
         <p>Please note that all pasted data is publicly available.</p>
+
+        @include('_ad_slot')
     </div>
 
     <div class="show-container">
