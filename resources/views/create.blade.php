@@ -15,8 +15,6 @@
                 </ul>
             </div>
             <p>Please note that all pasted data is publicly available.</p>
-
-            @include('_cartalyst-ad')
         </div>
 
         @include('_editor')
