@@ -31,7 +31,7 @@ Please make sure you install the following tools before starting with the instal
 > Note that you're free to adjust the `~/Sites/pastebin` location to any directory you want on your machine.
 
 1. Clone this repository: `git clone git@github.com:laravelio/pastebin.git ~/Sites/pastebin`
-2. Run `composer start` and optionally change some preferences to `Homestead.yaml`
+2. Run `composer start`
 3. Run `vagrant up`
 4. SSH into your Vagrant box, go to `/home/vagrant/Code/pastebin` and run `composer setup`
 5. Add `192.168.10.30 pastebin.app` to your computer's `/etc/hosts` file
