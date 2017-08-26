@@ -2,7 +2,7 @@
 
 namespace App;
 
-use Hashids\Hashids;
+use Ramsey\Uuid\Uuid;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
 
@@ -32,15 +32,10 @@ class Paste extends Model
         $paste->ip = $request->ip();
         $paste->save();
 
-        $paste->hash = self::hashid($paste->id);
+        $paste->hash = Uuid::uuid4()->toString();
         $paste->save();
 
         return $paste;
-    }
-
-    private static function hashid(int $id): string
-    {
-        return (new Hashids('Lio Pastebin', 5))->encode($id);
     }
 
     /**

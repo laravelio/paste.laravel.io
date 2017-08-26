@@ -7,10 +7,10 @@
     "require": {
         "php": "^7.1",
         "bugsnag/bugsnag-laravel": "^2.4",
-        "hashids/hashids": "^2.0",
         "laravel/framework": "5.4.*",
         "laravel/tinker": "~1.0",
         "laravelcollective/html": "5.4.*",
+        "ramsey/uuid": "^3.7",
         "roave/security-advisories": "dev-master"
     },
     "require-dev": {
