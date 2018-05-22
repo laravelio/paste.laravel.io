@@ -14,7 +14,7 @@
         "roave/security-advisories": "dev-master"
     },
     "require-dev": {
-        "codeclimate/php-test-reporter": "^0.4.4",
+        "doctrine/dbal": "^2.7",
         "fzaninotto/faker": "^1.6",
         "laravel/homestead": "^6",
         "mockery/mockery": "0.9.*",

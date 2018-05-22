@@ -14,17 +14,10 @@ cache:
 before_script:
   - composer install
 
-script: vendor/bin/phpunit --verbose --coverage-clover build/logs/clover.xml
-
-after_script:
-  - vendor/bin/test-reporter
+script: vendor/bin/phpunit --verbose
 
 deploy:
   provider: script
   script: curl ${ENVOYER_DEPLOYMENT_HOOK}?sha=${TRAVIS_COMMIT}
   on:
     branch: master
-    
-addons:
-  code_climate:
-    repo_token: $CODE_CLIMATE_TOKEN
