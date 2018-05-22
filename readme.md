@@ -31,7 +31,7 @@ Please make sure you install the following tools before starting with the instal
 1. Clone this repository: `git clone git@github.com:laravelio/pastebin.git ~/Sites/pastebin`
 2. Run `composer install && homestead make --no-after`
 3. Run `vagrant up`
-4. SSH into your Vagrant box, go to `/home/vagrant/Code/pastebin` and run `composer setup`
+4. SSH into your Vagrant box, go to `/home/vagrant/code` and run `composer setup`
 5. Add `192.168.10.30 pastebin.test` to your computer's `/etc/hosts` file
 
 You can now visit the app in your browser by visiting [http://pastebin.test](http://pastebin.test).
