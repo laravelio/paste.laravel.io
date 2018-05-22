@@ -49,16 +49,11 @@
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
             "php artisan optimize"
         ],
-        "start": [
-            "composer install",
-            "homestead make --no-after"
-        ],
         "setup": [
             "php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "php artisan key:generate",
             "php artisan migrate"
-        ],
-        "test": "phpunit --stop-on-failure"
+        ]
     },
     "config": {
         "preferred-install": "dist",

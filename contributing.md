@@ -26,4 +26,4 @@ We welcome contributions to the Laravel.io project. Please read the following gu
 
 All tests can be run with the following commands. Make sure to run this inside the Homestead box.
 
-    $ composer test
+    $ vendor/bin/phpunit
