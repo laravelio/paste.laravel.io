@@ -29,7 +29,6 @@ class Paste extends Model
     private static function createNew(Paste $paste, Request $request): Paste
     {
         $paste->code = $request->get('code');
-        $paste->ip = $request->ip();
         $paste->save();
 
         $paste->hash = Uuid::uuid4()->toString();
