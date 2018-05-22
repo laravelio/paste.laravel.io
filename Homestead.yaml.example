@@ -6,13 +6,11 @@ authorize: ~/.ssh/id_rsa.pub
 keys:
     - ~/.ssh/id_rsa
 folders:
-    -
-        map: ~/Sites/pastebin
-        to: /home/vagrant/Code/pastebin
+    - map: ~/Sites/pastebin
+      to: /home/vagrant/code
 sites:
-    -
-        map: pastebin.app
-        to: /home/vagrant/Code/pastebin/public
+    - map: pastebin.test
+      to: /home/vagrant/code/public
 databases:
     - homestead
 name: pastebin

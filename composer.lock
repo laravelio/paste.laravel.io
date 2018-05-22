@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "7ad46c6ed1917edeec7d77f7406843c2",
+    "content-hash": "8c12266bc0f91ffd6b6cc7de13db8512",
     "packages": [
         {
             "name": "bugsnag/bugsnag",
@@ -2805,23 +2805,23 @@
         },
         {
             "name": "laravel/homestead",
-            "version": "v5.4.0",
+            "version": "v6.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/homestead.git",
-                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288"
+                "reference": "9d87aea3d61fb07be31acf63e20c787de46b6df6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/homestead/zipball/f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
-                "reference": "f54a9f0b6a0de85c96d5e82fd94a563d979f8288",
+                "url": "https://api.github.com/repos/laravel/homestead/zipball/9d87aea3d61fb07be31acf63e20c787de46b6df6",
+                "reference": "9d87aea3d61fb07be31acf63e20c787de46b6df6",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.6 || ^7.0",
-                "symfony/console": "~2.3|~3.0",
-                "symfony/process": "~2.3|~3.0",
-                "symfony/yaml": "~2.3|~3.0"
+                "symfony/console": "~2.3|~3.0|~4.0",
+                "symfony/process": "~2.3|~3.0|~4.0",
+                "symfony/yaml": "~2.3|~3.0|~4.0"
             },
             "require-dev": {
                 "phpunit/phpunit": "^5.7 || ^6.0"
@@ -2851,7 +2851,7 @@
                 }
             ],
             "description": "A virtual machine for web artisans.",
-            "time": "2017-06-09T13:53:37+00:00"
+            "time": "2017-11-26T15:57:24+00:00"
         },
         {
             "name": "mockery/mockery",
