@@ -38,7 +38,7 @@ You can now visit the app in your browser by visiting [http://pastebin.test](htt
 
 ## Maintainers
 
-The Laravel.io pastebin is currently maintained by [Dries Vints](https://github.com/driesvints). If you have any questions please don't hesitate to create an issue on this repo or ask us through the #laravelio channel on [Slack](https://larachat.slack.com).
+The Laravel.io pastebin is currently maintained by [Dries Vints](https://github.com/driesvints). If you have any questions please don't hesitate to create an issue on this repo.
 
 ## Contributing
 
