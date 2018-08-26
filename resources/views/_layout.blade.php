@@ -24,21 +24,19 @@
     @include('_ad_sense')
 </head>
 <body class="bin" onload="prettyPrint()">
-
-<div class="wrapper">
-    <div class="table">
-        @yield('table')
+    <div class="wrapper">
+        <div class="table">
+            @yield('table')
+        </div>
     </div>
-</div>
 
-<script src="{{ asset('legacy/jquery.min.js') }}"></script>
-<script src="{{ asset('legacy/jquery-ui-1.10.3.custom.min.js') }}"></script>
-<script src="{{ asset('legacy/mousetrap.min.js') }}"></script>
-<script src="{{ asset('legacy/google-code-prettify/prettify.js') }}"></script>
-<script src="{{ asset('legacy/tabby.js') }}"></script>
-<script src="{{ asset('legacy/zclip.min.js') }}"></script>
-<script src="{{ asset('legacy/toastr/toastr.min.js') }}"></script>
-<script src="{{ asset('legacy/bin.js') }}"></script>
-
+    <script src="{{ asset('legacy/jquery.min.js') }}"></script>
+    <script src="{{ asset('legacy/jquery-ui-1.10.3.custom.min.js') }}"></script>
+    <script src="{{ asset('legacy/mousetrap.min.js') }}"></script>
+    <script src="{{ asset('legacy/google-code-prettify/prettify.js') }}"></script>
+    <script src="{{ asset('legacy/tabby.js') }}"></script>
+    <script src="{{ asset('legacy/zclip.min.js') }}"></script>
+    <script src="{{ asset('legacy/toastr/toastr.min.js') }}"></script>
+    <script src="{{ asset('legacy/bin.js') }}"></script>
 </body>
 </html>
