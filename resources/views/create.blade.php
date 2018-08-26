@@ -3,7 +3,9 @@
 @section('table')
     @include('_sidebar_toggle')
 
-    {!! Form::open(['class' => 'editor-form']) !!}
+    <form action="{{ url('/') }}" method="POST" class="editor-form">
+        {!! csrf_field() !!}
+
         <div class="sidebar">
             @include('_logo')
 
@@ -20,5 +22,5 @@
         </div>
 
         @include('_editor')
-    {!! Form::close() !!}
+    </form>
 @stop

@@ -3,7 +3,9 @@
 @section('table')
     @include('_sidebar_toggle')
 
-    {!! Form::model($paste, ['class' => 'editor-form']) !!}
+    <form action="{{ route('edit', $paste) }}" method="POST" class="editor-form">
+        {!! csrf_field() !!}
+
         <div class="sidebar create">
             @include('_logo')
 
@@ -25,5 +27,5 @@
         </div>
 
         @include('_editor')
-    {!! Form::close() !!}
+    </form>
 @stop

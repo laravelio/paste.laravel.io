@@ -13,7 +13,6 @@
         "fideloper/proxy": "~3.3",
         "laravel/framework": "5.5.*",
         "laravel/tinker": "~1.0",
-        "laravelcollective/html": "5.5.*",
         "league/flysystem-aws-s3-v3": "^1.0",
         "ramsey/uuid": "^3.7",
         "roave/security-advisories": "dev-master",
