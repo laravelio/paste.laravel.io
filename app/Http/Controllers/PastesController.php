@@ -7,11 +7,6 @@ use App\Http\Requests\PasteRequest;
 
 class PastesController extends Controller
 {
-    public function create()
-    {
-        return view('create');
-    }
-
     public function post(PasteRequest $request)
     {
         $paste = Paste::fromRequest($request);

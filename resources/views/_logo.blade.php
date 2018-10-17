@@ -1,1 +1,1 @@
-<a href="https://laravel.io/"><img class="logo" src="{{ asset('assets/images/laravelio.png') }}"></a>
+<a href="https://laravel.io/"><img class="logo" src="{{ asset('images/laravelio.png') }}"></a>
