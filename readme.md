@@ -1,6 +1,6 @@
 # Laravel.io Pastebin
 
-[![Build Status](https://travis-ci.org/laravelio/pastebin.svg?branch=master)](https://travis-ci.org/laravelio/pastebin)
+[![CircleCI](https://circleci.com/gh/laravelio/pastebin/tree/master.svg?style=svg)](https://circleci.com/gh/laravelio/pastebin/tree/master)
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Laravel Version](https://shield.with.social/cc/github/laravelio/pastebin/master.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
