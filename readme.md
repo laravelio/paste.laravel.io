@@ -4,7 +4,7 @@
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Laravel Version](https://shield.with.social/cc/github/laravelio/pastebin/master.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
-This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.txt). Feel free to contribute to the pastebin by sending in a pull request.
+This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.md). Feel free to contribute to the pastebin by sending in a pull request.
 
 ## Table of Contents
 
@@ -50,4 +50,4 @@ If you discover a security vulnerability with this project, please send an email
 
 ## License
 
-The MIT License. Please see [the license file](license.txt) for more information.
+The MIT License. Please see [the license file](license.md) for more information.
