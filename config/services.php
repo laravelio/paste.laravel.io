@@ -35,11 +35,4 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
-    'google' => [
-        'ad_sense' => [
-            'client' => env('GOOGLE_AD_SENSE_AD_CLIENT'),
-            'unit_sidebar' => env('GOOGLE_AD_SENSE_UNIT_SIDEBAR'),
-        ],
-    ],
-
 ];

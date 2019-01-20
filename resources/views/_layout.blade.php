@@ -21,7 +21,6 @@
 
     @include('_google_analytics')
     @include('_favicons')
-    @include('_ad_sense')
 </head>
 <body class="bin" onload="prettyPrint()">
     <div class="wrapper">
