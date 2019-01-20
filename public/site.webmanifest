@@ -1,6 +1,6 @@
 {
-    "name": "Laravel.io",
-    "short_name": "Laravel.io",
+    "name": "Laravel.io Pastebin",
+    "short_name": "Pastebin",
     "icons": [
         {
             "src": "/images/favicons/android-chrome-192x192.png",
