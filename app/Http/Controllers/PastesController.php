@@ -2,8 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\Paste;
 use App\Http\Requests\PasteRequest;
+use App\Paste;
 
 class PastesController extends Controller
 {

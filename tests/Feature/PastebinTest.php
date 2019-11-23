@@ -3,8 +3,8 @@
 namespace Tests\Feature;
 
 use App\Paste;
-use Tests\TestCase;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use Tests\TestCase;
 
 class PastebinTest extends TestCase
 {

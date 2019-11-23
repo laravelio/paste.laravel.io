@@ -2,9 +2,9 @@
 
 namespace App;
 
-use Ramsey\Uuid\Uuid;
-use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
+use Ramsey\Uuid\Uuid;
 
 class Paste extends Model
 {
