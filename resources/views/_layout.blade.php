@@ -19,7 +19,6 @@
 
     <script src="{{ asset('legacy/custom.modernizr.js') }}"></script>
 
-    @include('_google_analytics')
     @include('_favicons')
 </head>
 <body class="bin" onload="prettyPrint()">
@@ -37,5 +36,7 @@
     <script src="{{ asset('legacy/zclip.min.js') }}"></script>
     <script src="{{ asset('legacy/toastr/toastr.min.js') }}"></script>
     <script src="{{ asset('legacy/bin.js') }}"></script>
+
+    @include('_fathom')
 </body>
 </html>

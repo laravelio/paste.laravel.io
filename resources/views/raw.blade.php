@@ -12,10 +12,11 @@
 
     <title>Pastebin | Laravel.io</title>
 
-    @include('_google_analytics')
     @include('_favicons')
 </head>
 <body>
     <pre>{{ $paste->code }}</pre>
+
+    @include('_fathom')
 </body>
 </html>
