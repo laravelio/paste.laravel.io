@@ -1,6 +1,6 @@
 # Laravel.io Pastebin
 
-[![Github Actions](https://github.com/laravelio/paste.laravel.io/workflows/tests/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions)
+[![Github Actions](https://github.com/laravelio/paste.laravel.io/workflows/CI/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions)
 [![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
 [![Laravel Version](https://shield.with.social/cc/github/laravelio/paste.laravel.io/master.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
