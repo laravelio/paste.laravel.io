@@ -1,7 +1,7 @@
 # Laravel.io Pastebin
 
-[![Github Actions](https://github.com/laravelio/paste.laravel.io/workflows/CI/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions)
-[![StyleCI](https://styleci.io/repos/80994622/shield?branch=master)](https://styleci.io/repos/80994622)
+[![Tests](https://github.com/laravelio/paste.laravel.io/workflows/Tests/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3ATests)
+[![Code Style](https://github.com/laravelio/paste.laravel.io/workflows/Code%20Style/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3AFormatting)
 [![Laravel Version](https://shield.with.social/cc/github/laravelio/paste.laravel.io/master.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
 This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.md). Feel free to contribute to the pastebin by sending in a pull request.
