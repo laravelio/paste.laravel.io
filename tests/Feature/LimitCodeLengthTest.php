@@ -9,7 +9,7 @@ class LimitCodeLengthTest extends TestCase
     /** @test */
     public function it_disallows_long_code_posts()
     {
-        $code = file_get_contents(__DIR__.'/../artifacts/long_text.txt');
+        $code = file_get_contents(__DIR__ . '/../artifacts/long_text.txt');
 
         $this->post('/', compact('code'))
             ->assertSessionHasErrors('code')
