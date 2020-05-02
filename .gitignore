@@ -11,3 +11,4 @@ Homestead.yaml
 .env
 /aliases
 /after.sh
+.php_cs.cache
