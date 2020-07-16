@@ -37,7 +37,7 @@ Please see [the contributing guide](contributing.md) for details.
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability with this project, please send an email immediately to Dries Vints at [dries.vints@gmail.com](mailto:dries.vints@gmail.com). **Do not create an issue for the vulnerability.**
+If you discover a security vulnerability with this project, please send an email immediately to Dries Vints at [dries@vints.io](mailto:dries@vints.io). **Do not create an issue for the vulnerability.**
 
 ## License
 
