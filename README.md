@@ -1,3 +1,19 @@
+<p align="center">
+    <img src="https://github.com/laravelio/art/blob/master/laravelio-logo-lg.svg" width="400" />
+</p>
+
+<p align="center">
+    <a href="https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3ATests">
+        <img src="https://github.com/laravelio/paste.laravel.io/workflows/Tests/badge.svg" alt="Tests" />
+    </a>
+    <a href="https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3A%22Code+Style%22">
+        <img src="https://github.com/laravelio/paste.laravel.io/workflows/Code%20Style/badge.svg" alt="Code Style" />
+    </a>
+    <a href="https://packagist.org/packages/laravel/framework">
+        <img src="https://shield.with.social/cc/github/laravelio/paste.laravel.io/master.svg?style=flat-square" alt="Laravel Version" />
+    </a>
+</p>
+
 # Laravel.io Pastebin
 
 [![Tests](https://github.com/laravelio/paste.laravel.io/workflows/Tests/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3ATests)
