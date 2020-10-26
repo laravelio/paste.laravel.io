@@ -20,6 +20,7 @@
     <script src="{{ asset('legacy/custom.modernizr.js') }}"></script>
 
     @include('_favicons')
+    @include('_fathom')
 </head>
 <body class="bin" onload="prettyPrint()">
     <div class="wrapper">
@@ -36,7 +37,5 @@
     <script src="{{ asset('legacy/zclip.min.js') }}"></script>
     <script src="{{ asset('legacy/toastr/toastr.min.js') }}"></script>
     <script src="{{ asset('legacy/bin.js') }}"></script>
-
-    @include('_fathom')
 </body>
 </html>
