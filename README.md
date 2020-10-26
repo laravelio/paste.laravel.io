@@ -10,15 +10,11 @@
         <img src="https://github.com/laravelio/paste.laravel.io/workflows/Code%20Style/badge.svg" alt="Code Style" />
     </a>
     <a href="https://packagist.org/packages/laravel/framework">
-        <img src="https://shield.with.social/cc/github/laravelio/paste.laravel.io/main.svg?style=flat-square" alt="Laravel Version" />
+        <img src="https://shield.with.social/cc/github/laravelio/paste.laravel.io/main.svg" alt="Laravel Version" />
     </a>
 </p>
 
 # Laravel.io Pastebin
-
-[![Tests](https://github.com/laravelio/paste.laravel.io/workflows/Tests/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3ATests)
-[![Code Style](https://github.com/laravelio/paste.laravel.io/workflows/Code%20Style/badge.svg)](https://github.com/laravelio/paste.laravel.io/actions?query=workflow%3A%22Code+Style%22)
-[![Laravel Version](https://shield.with.social/cc/github/laravelio/paste.laravel.io/main.svg?style=flat-square)](https://packagist.org/packages/laravel/framework)
 
 This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.md). Feel free to contribute to the pastebin by sending in a pull request.
 
