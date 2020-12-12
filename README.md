@@ -25,7 +25,7 @@ Please make sure you install the following tools before starting with the instal
 - [VirtualBox](https://www.virtualbox.org/)
 - [Vagrant](https://www.vagrantup.com/)
 - [Composer](https://getcomposer.org/download/)
-- PHP >=7.1
+- PHP >=7.4
 
 ## Installation
 
