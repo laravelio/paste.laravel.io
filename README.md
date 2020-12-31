@@ -20,24 +20,22 @@ This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). 
 
 ## Requirements
 
-Please make sure you install the following tools before starting with the install procedure.
+The following tools are required in order to start the installation.
 
-- [VirtualBox](https://www.virtualbox.org/)
-- [Vagrant](https://www.vagrantup.com/)
-- [Composer](https://getcomposer.org/download/)
 - PHP >=7.4
+- [Composer](https://getcomposer.org/download/)
+- [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
 ## Installation
 
-> Note that you're free to adjust the `~/Sites/pastebin` location to any directory you want on your machine.
+1. Clone this repository locally with `git clone git@github.com:laravelio/paste.laravel.io.git paste.laravel.io`
+2. Copy the `.env.example` file to `.env`
+3. Install the PHP dependencies with `composer install`
+4. Generate a new app key with `php artisan key:generate`
+5. Install and compile the front-end dependencies with `npm install && npm run dev`
+6. Serve the website locally by running `php artisan serve`
 
-1. Clone this repository: `git clone git@github.com:laravelio/paste.laravel.io.git ~/Sites/pastebin`
-2. Run `composer install && homestead make --no-after`
-3. Run `vagrant up`
-4. SSH into your Vagrant box, go to `/home/vagrant/code` and run `composer setup`
-5. Add `192.168.10.30 pastebin.test` to your computer's `/etc/hosts` file
-
-You can now visit the app in your browser by visiting [http://pastebin.test](http://pastebin.test).
+You can now visit the app in your browser by visiting [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 ## Maintainers
 

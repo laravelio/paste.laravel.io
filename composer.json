@@ -17,7 +17,6 @@
         "beyondcode/laravel-dump-server": "^1.2",
         "doctrine/dbal": "^2.8",
         "fzaninotto/faker": "^1.8",
-        "laravel/homestead": "^7.18",
         "mockery/mockery": "^1.2",
         "phpunit/phpunit": "^7.4"
     },
