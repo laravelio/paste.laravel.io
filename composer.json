@@ -11,8 +11,7 @@
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "league/flysystem-aws-s3-v3": "^1.0",
-        "ramsey/uuid": "^3.8",
-        "roave/security-advisories": "dev-master"
+        "ramsey/uuid": "^3.8"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.2",
