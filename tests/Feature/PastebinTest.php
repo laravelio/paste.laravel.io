@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Paste;
+use App\Models\Paste;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
@@ -30,34 +30,34 @@ class PastebinTest extends TestCase
     /** @test */
     public function users_can_see_pastes()
     {
-        $paste = factory(Paste::class)->create();
+        $paste = Paste::factory()->create();
 
         $this->get("/{$paste->hash}")
-            ->assertSee(e($paste->code));
+            ->assertSee($paste->code);
     }
 
     /** @test */
     public function users_can_see_raw_pastes()
     {
-        $paste = factory(Paste::class)->create();
+        $paste = Paste::factory()->create();
 
         $this->get("/{$paste->hash}/raw")
-            ->assertSee(e($paste->code));
+            ->assertSee($paste->code);
     }
 
     /** @test */
     public function users_can_see_the_fork_page()
     {
-        $paste = factory(Paste::class)->create();
+        $paste = Paste::factory()->create();
 
         $this->get("/fork/{$paste->hash}")
-            ->assertSee(e($paste->code));
+            ->assertSee($paste->code);
     }
 
     /** @test */
     public function users_can_fork_pastes()
     {
-        $paste = factory(Paste::class)->create();
+        $paste = Paste::factory()->create();
 
         $this->post("/fork/{$paste->hash}", ['code' => 'foo code'])
             ->assertStatus(302);

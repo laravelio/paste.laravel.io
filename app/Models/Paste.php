@@ -1,15 +1,20 @@
 <?php
 
-namespace App;
+namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Http\Request;
 use Ramsey\Uuid\Uuid;
 
 class Paste extends Model
 {
+    use HasFactory;
+
     /**
-     * {@inheritdoc}
+     * The table associated with the model.
+     *
+     * @var string
      */
     protected $table = 'pastes';
 
@@ -37,7 +42,9 @@ class Paste extends Model
     }
 
     /**
-     * {@inheritdoc}
+     * Get the route key for the model.
+     *
+     * @return string
      */
     public function getRouteKeyName()
     {

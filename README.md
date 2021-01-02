@@ -9,14 +9,11 @@
     <a href="https://github.styleci.io/repos/80994622">
         <img src="https://github.styleci.io/repos/80994622/shield?style=flat" alt="Code Style">
     </a>
-    <a href="https://packagist.org/packages/laravel/framework">
-        <img src="https://shield.with.social/cc/github/laravelio/paste.laravel.io/main.svg" alt="Laravel Version" />
-    </a>
 </p>
 
 # Laravel.io Pastebin
 
-This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.md). Feel free to contribute to the pastebin by sending in a pull request.
+This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). The code is entirely open source and licensed under [the MIT license](license.md). We welcome your contributions but we encourage you to read the [the contributing guide](CONTRIBUTING.md) before creating an issue or sending in a pull request. Read the installation guide below to get started with setting up the app on your machine.
 
 ## Requirements
 
@@ -39,15 +36,19 @@ You can now visit the app in your browser by visiting [http://127.0.0.1:8000](ht
 
 ## Maintainers
 
-The Laravel.io pastebin is currently maintained by [Dries Vints](https://github.com/driesvints). If you have any questions please don't hesitate to create an issue on this repo.
+The Laravel.io pastebin is currently maintained by [Dries Vints](https://github.com/driesvints) and [Joe Dixon](https://github.com/joedixon). If you have any questions please don't hesitate to create an issue on this repo.
 
 ## Contributing
 
 Please see [the contributing guide](contributing.md) for details.
 
+## Code of Conduct
+
+Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing or engaging in discussions.
+
 ## Security Vulnerabilities
 
-If you discover a security vulnerability with this project, please send an email immediately to Dries Vints at [dries@vints.io](mailto:dries@vints.io). **Do not create an issue for the vulnerability.**
+If you discover a security vulnerability with this project, please send an email immediately to [security@laravel.io](mailto:security@laravel.io). **Do not create an issue for the vulnerability.**
 
 ## License
 
