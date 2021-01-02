@@ -4,7 +4,6 @@ namespace Database\Factories;
 
 use App\Models\Paste;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 use Ramsey\Uuid\Uuid;
 
 class PasteFactory extends Factory
