@@ -16,7 +16,7 @@ class PastebinTest extends TestCase
         $this->get('/')
             ->assertStatus(200)
             ->assertSee('Paste')
-            ->assertSee('Clear');
+            ->assertSee('Reset');
     }
 
     /** @test */
