@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    @unless (request()->is('/'))
-        {{-- We don't want to allow indexing of pastes. --}}
-        <meta name="robots" content="noindex">
-    @endif
+    <meta name="robots" content="noindex">
 
     <title>Pastebin | Laravel.io</title>
 
-    @include('_favicons')
+    @include('layouts.favicons')
+    @include('layouts.fathom')
 </head>
 <body>
     <pre>{{ $paste->code }}</pre>
-
-    @include('_fathom')
 </body>
 </html>

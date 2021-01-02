@@ -1,29 +1,19 @@
-@extends('_layout')
+@extends('layouts.app')
 
-@section('table')
-    @include('_sidebar_toggle')
+@section('content')
+    <form action="{{ route('edit', $paste) }}" method="POST">
+        @csrf
 
-    <form action="{{ route('edit', $paste) }}" method="POST" class="editor-form">
-        {!! csrf_field() !!}
+        <div x-data="{ isOpen: false }" class="h-screen flex overflow-hidden">
+            <x-main>
+                @include('_editor')
+            </x-main>
 
-        <div class="sidebar create">
-            @include('_logo')
-
-            <div class="options">
-                {!! $errors->first('code', '<p>:message</p><br>') !!}
-                <ul>
-                    <li><input type="submit" value="Save (CMD/CTRL+S)" class="button"></li>
-                    <li><input type="reset" value="Clear" class="button"></li>
-                    <li>
-                        <a href="{{ route('show', $paste->hash) }}" class="button back">
-                            <i class="fa fa-arrow-circle-o-left"></i> Back
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <p>Please note that all pasted data is publicly available.</p>
+            <x-nav>
+                <x-nav-item label="Save" type="submit" icon="heroicon-o-save" />
+                <x-nav-item label="Reset" type="reset" icon="heroicon-o-ban" />
+                <x-nav-item label="Back" :link="route('show', $paste->hash)" icon="heroicon-o-arrow-circle-left" />
+            </x-nav>
         </div>
-
-        @include('_editor')
     </form>
 @stop
