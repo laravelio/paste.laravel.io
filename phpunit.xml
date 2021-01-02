@@ -9,11 +9,6 @@
             <directory suffix="Test.php">./tests/Feature</directory>
         </testsuite>
     </testsuites>
-    <coverage processUncoveredFiles="true">
-        <include>
-            <directory suffix=".php">./app</directory>
-        </include>
-    </coverage>
     <php>
         <server name="APP_ENV" value="testing"/>
         <server name="APP_KEY" value="base64:ur5BcJThDakd4xX2EAX2feYzIH17/8Fj9mjlMs0bmYM="/>
