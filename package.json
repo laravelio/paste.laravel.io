@@ -16,6 +16,7 @@
         "postcss": "^8.1.14"
     },
     "dependencies": {
+        "alpinejs": "^2.8.0",
         "tailwindcss": "^2.0.2"
     }
 }
