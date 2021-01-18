@@ -1,4 +1,4 @@
-@import "tailwindcss/base";
+@import 'tailwindcss/base';
 
 .light {
     @import '~highlight.js/styles/a11y-light';
@@ -8,8 +8,8 @@
     @import '~highlight.js/styles/a11y-dark';
 }
 
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .hljs {
     @apply bg-white;
