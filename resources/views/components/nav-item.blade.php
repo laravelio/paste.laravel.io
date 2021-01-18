@@ -2,15 +2,15 @@
     <a
         href="{{ $link }}"
         @isset($blank) target="_blank" @endisset
-        {{ $attributes->merge(['class' => 'text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center py-2 text-base font-medium rounded-md']) }}
+        {{ $attributes->merge(['class' => 'inline-flex items-center w-full px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500']) }}
     >
-        @svg($icon, 'text-gray-400 group-hover:text-gray-500 mr-3 h-6 w-6')
+        @svg($icon, '-ml-0.5 mr-2 h-4 w-4')
 
         {{ $label }}
     </a>
 @else
-    <div class="text-gray-600 hover:bg-gray-50 hover:text-gray-900 group flex items-center py-2 text-base font-medium rounded-md">
-        @svg($icon, 'text-gray-400 group-hover:text-gray-500 mr-3 h-6 w-6')
+    <div class="inline-flex items-center w-full px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-gray-700 bg-gray-200 hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+        @svg($icon, '-ml-0.5 mr-2 h-4 w-4')
 
         <input type="{{ $type }}" value="{{ $label }}" {{ $attributes->merge(['class' => 'bg-transparent cursor-pointer font-medium']) }} />
     </div>
