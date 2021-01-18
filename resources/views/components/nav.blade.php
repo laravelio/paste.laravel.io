@@ -1,5 +1,5 @@
 <!-- Off-canvas menu for mobile, show/hide based on off-canvas menu state. -->
-<div :class="{'hidden': !isOpen }">
+<div class="print:hidden" :class="{'hidden': !isOpen }">
     <div class="fixed inset-0 flex z-40">
         <!--
           Off-canvas menu overlay, show/hide based on off-canvas menu state.
@@ -51,7 +51,7 @@
 </div>
 
 <!-- Static sidebar for desktop -->
-<div :class="{'hidden': !isOpen }" class="lg:flex lg:flex-shrink-0">
+<div :class="{'hidden': !isOpen }" class="lg:flex lg:flex-shrink-0 print:hidden">
     <div class="flex flex-col w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-gray-50">

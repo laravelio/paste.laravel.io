@@ -1,5 +1,5 @@
 <div class="flex flex-col min-w-0 flex-1 overflow-hidden">
-    <div class="lg:hidden">
+    <div class="lg:hidden print:hidden">
         <div class="flex items-center justify-between bg-gray-50 border-b border-gray-200 px-4 py-1.5">
             <div>
                 <a href="{{ route('home') }}">
