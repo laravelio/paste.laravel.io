@@ -27,10 +27,10 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
+            <div class="flex-1 h-0 pt-6 pb-4 overflow-y-auto">
                 <div class="flex-shrink-0 flex items-center px-6">
                     <a href="https://laravel.io">
-                        <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io">
+                        <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo">
                     </a>
                 </div>
 
@@ -55,10 +55,10 @@
     <div class="flex flex-col w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-gray-50">
-            <div class="flex-1 flex flex-col pt-5 pb-4 overflow-y-auto">
+            <div class="flex-1 flex flex-col pt-6 pb-4 overflow-y-auto">
                 <div class="flex items-center flex-shrink-0 px-6">
                     <a href="https://laravel.io">
-                        <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io">
+                        <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo">
                     </a>
                 </div>
 
