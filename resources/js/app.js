@@ -24,3 +24,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
         hljs.lineNumbersBlock(block);
     });
 });
+
+// Clipboard
+import ClipboardJS from 'clipboard';
+
+new ClipboardJS('.copy-btn');
