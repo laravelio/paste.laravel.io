@@ -1,21 +1,48 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
 require('./bootstrap');
 
-window.Vue = require('vue');
+import 'alpinejs';
 
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+// Textarea identation support
+import * as indentation from 'indent-textarea';
 
-Vue.component('example-component', require('./components/ExampleComponent.vue'));
+const textarea = document.querySelector('textarea');
 
-const app = new Vue({
-    el: '#app',
+if (textarea) {
+    indentation.watch(textarea);
+}
+
+// Highlight code blocks and line numbers
+const hljs = require('highlight.js');
+
+window.hljs = hljs;
+
+require('highlightjs-line-numbers.js');
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('pre code').forEach((block) => {
+        hljs.highlightBlock(block);
+        hljs.lineNumbersBlock(block);
+    });
 });
+
+// Clipboard
+import ClipboardJS from 'clipboard';
+
+new ClipboardJS('.copy-btn');
+
+// Dark mode
+const darkModeToggles = document.getElementsByClassName('darkModeToggle');
+
+for (let i = 0; i < darkModeToggles.length; i++) {
+    darkModeToggles[i].onclick = function () {
+        if (localStorage.theme === 'light') {
+            localStorage.theme = 'dark';
+            document.querySelector('html').classList.add('dark');
+            document.querySelector('html').classList.remove('light');
+        } else {
+            localStorage.theme = 'light';
+            document.querySelector('html').classList.remove('dark');
+            document.querySelector('html').classList.add('light');
+        }
+    };
+}

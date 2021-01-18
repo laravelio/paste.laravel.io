@@ -1,24 +1,25 @@
-@extends('_layout')
+@extends('layouts.app')
 
-@section('table')
-    @include('_sidebar_toggle')
+@section('content')
+    <div x-data="{ isOpen: false }" class="h-screen flex overflow-hidden">
+        <x-main>
+            <pre
+                id="code"
+                class="h-full font-mono text-sm prettyprint linenums selectable" data-line-numbers="true"
+            ><code>{{ $paste->code }}</code></pre>
+        </x-main>
 
-    <div class="sidebar">
-        @include('_logo')
-
-        <div class="options">
-            <ul>
-                <li><a href="{{ route('home') }}" class="button new">New (N)</a></li>
-                <li><a href="{{ route('edit', $paste->hash) }}" class="button fork">Fork (F)</a></li>
-                <li><a target="_blank" href="{{ route('raw', $paste->hash) }}" class="button raw">Raw (R)</a></li>
-            </ul>
-        </div>
-        <p>Please note that all pasted data is publicly available.</p>
-    </div>
-
-    <div class="show-container">
-        <pre class="prettyprint linenums selectable">
-{{ $paste->code }}
-        </pre>
+        <x-nav>
+            <x-nav-item label="New" :link="route('home')" icon="heroicon-o-document-add" />
+            <x-nav-item
+                label="Copy"
+                type="button"
+                icon="heroicon-o-clipboard"
+                class="copy-btn"
+                data-clipboard-text="{{ $paste->code }}"
+            />
+            <x-nav-item label="Fork" :link="route('edit', $paste->hash)" icon="heroicon-o-document-duplicate" />
+            <x-nav-item label="Raw" :link="route('raw', $paste->hash)" icon="heroicon-o-external-link" blank />
+        </x-nav>
     </div>
 @stop

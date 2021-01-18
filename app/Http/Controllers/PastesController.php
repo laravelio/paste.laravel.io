@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\PasteRequest;
-use App\Paste;
+use App\Models\Paste;
 
 class PastesController extends Controller
 {
