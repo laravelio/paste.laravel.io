@@ -6,7 +6,10 @@ import 'alpinejs';
 import * as indentation from 'indent-textarea';
 
 const textarea = document.querySelector('textarea');
-indentation.watch(textarea);
+
+if (textarea) {
+    indentation.watch(textarea);
+}
 
 // Highlight code blocks and line numbers
 const hljs = require('highlight.js');
