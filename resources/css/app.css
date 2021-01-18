@@ -5,6 +5,9 @@
 @tailwind components;
 @tailwind utilities;
 
+.hljs {
+    @apply bg-white;
+}
 .hljs-ln td.hljs-ln-numbers {
     @apply text-gray-400 pr-3 inline-block w-full text-right;
 }
@@ -13,8 +16,4 @@
 }
 .hljs-ln td.hljs-ln-line {
     @apply py-1;
-}
-
-.code-line-numbers__number__zeros {
-    color: transparent;
 }

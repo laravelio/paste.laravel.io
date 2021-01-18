@@ -27,22 +27,22 @@
                     </svg>
                 </button>
             </div>
-            <div class="flex-1 h-0 pt-6 pb-4 overflow-y-auto">
-                <div class="flex-shrink-0 flex items-center px-6">
+            <div class="flex-1 h-0 pt-8 pb-4 px-6 overflow-y-auto">
+                <div class="flex-shrink-0 flex items-center px-2">
                     <a href="https://laravel.io">
                         <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo">
                     </a>
                 </div>
 
-                {!! $errors->first('code', '<p class="mt-8 px-4 text-red-600 font-medium">:message</p>') !!}
+                {!! $errors->first('code', '<p class="mt-8 text-red-600 font-medium">:message</p>') !!}
 
                 <nav aria-label="Sidebar" class="mt-5">
-                    <div class="px-2 space-y-1">
+                    <div class="space-y-1">
                         {!! $slot !!}
                     </div>
                 </nav>
 
-                <p class="mt-4 px-4 text-sm text-gray-500 flex-1">
+                <p class="mt-4 text-sm text-gray-500 flex-1">
                     Please note that all pasted data is publicly available.
                 </p>
             </div>
@@ -55,22 +55,22 @@
     <div class="flex flex-col w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-gray-50">
-            <div class="flex-1 flex flex-col pt-6 pb-4 overflow-y-auto">
-                <div class="flex items-center flex-shrink-0 px-6">
+            <div class="flex-1 flex flex-col pt-8 pb-4 px-6 overflow-y-auto">
+                <div class="flex items-center flex-shrink-0 px-2">
                     <a href="https://laravel.io">
                         <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo">
                     </a>
                 </div>
 
-                {!! $errors->first('code', '<p class="mt-8 px-4 text-red-600 font-medium">:message</p>') !!}
+                {!! $errors->first('code', '<p class="mt-8 text-red-600 font-medium">:message</p>') !!}
 
                 <nav class="mt-5" aria-label="Sidebar">
-                    <div class="px-2 space-y-1">
+                    <div class="space-y-1">
                         {!! $slot !!}
                     </div>
                 </nav>
 
-                <p class="mt-4 px-4 text-sm text-gray-500 flex-1">
+                <p class="mt-4 text-sm text-gray-500 flex-1">
                     Please note that all pasted data is publicly available.
                 </p>
             </div>
