@@ -1,6 +1,7 @@
 <div class="flex items-center flex-shrink-0 px-2">
     <a href="https://laravel.io">
-        <img class="w-auto" src="{{ asset('images/laravelio.png') }}" alt="Laravel.io Logo">
+        <img class="w-full dark:hidden" src="{{ asset('images/laravelio.svg') }}" alt="Laravel.io Logo" />
+        <img class="w-full hidden dark:inline" src="{{ asset('images/laravelio-white.svg') }}" alt="Laravel.io Logo" />
     </a>
 </div>
 
