@@ -9,7 +9,7 @@ module.exports = {
                 sans: ['Inter var', ...defaultTheme.fontFamily.sans],
             },
             screens: {
-                'print': {'raw': 'print'},
+                print: { raw: 'print' },
             },
         },
     },
