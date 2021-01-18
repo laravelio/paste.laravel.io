@@ -3,9 +3,9 @@
 @section('content')
     <div x-data="{ isOpen: false }" class="h-screen flex overflow-hidden">
         <x-main>
-            <pre class="h-full font-mono text-sm prettyprint linenums selectable">
-{{ $paste->code }}
-            </pre>
+            <pre
+                class="h-full font-mono text-sm prettyprint linenums selectable" data-line-numbers="true"
+            ><code>{{ $paste->code }}</code></pre>
         </x-main>
 
         <x-nav>

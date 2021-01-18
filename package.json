@@ -17,6 +17,8 @@
     },
     "dependencies": {
         "alpinejs": "^2.8.0",
+        "highlight.js": "^10.5.0",
+        "highlightjs-line-numbers.js": "^2.8.0",
         "tailwindcss": "^2.0.2"
     }
 }
