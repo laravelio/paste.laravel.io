@@ -1,13 +1,13 @@
 <div class="flex items-center flex-shrink-0 px-2">
     <a href="https://laravel.io">
-        <img class="w-full dark:hidden" src="{{ asset('images/laravelio.svg') }}" alt="Laravel.io Logo" />
-        <img class="w-full hidden dark:inline" src="{{ asset('images/laravelio-white.svg') }}" alt="Laravel.io Logo" />
+        <img class="w-full h-16 dark:hidden" src="{{ asset('images/laravelio.svg') }}" alt="Laravel.io Logo" />
+        <img class="w-full h-16 hidden dark:inline" src="{{ asset('images/laravelio-white.svg') }}" alt="Laravel.io Logo" />
     </a>
 </div>
 
-{!! $errors->first('code', '<p class="mt-8 text-red-600 font-medium">:message</p>') !!}
+{!! $errors->first('code', '<p class="mt-4 text-red-600 font-medium text-center">:message</p>') !!}
 
-<nav class="mt-5" aria-label="Sidebar">
+<nav class="mt-4" aria-label="Sidebar">
     <div class="space-y-1">
         {!! $slot !!}
     </div>
