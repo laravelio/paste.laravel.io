@@ -25,7 +25,7 @@
                     <x-heroicon-o-x class="h-6 w-6 text-white" />
                 </button>
             </div>
-            <div class="flex-1 h-0 pt-8 pb-4 px-6 overflow-y-auto">
+            <div class="flex-1 flex flex-col pt-8 pb-4 px-6 overflow-y-auto">
                 <x-sidebar>{!! $slot !!}</x-sidebar>
             </div>
         </div>
