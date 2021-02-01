@@ -34,6 +34,14 @@ The following tools are required in order to start the installation.
 
 You can now visit the app in your browser by visiting [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
+## Commands
+
+Command | Description
+--- | ---
+**`php artisan test`** | Run the tests
+`php artisan migrate:fresh --seed` | Reset the database
+`npm run watch` | Watch for changes in CSS and JS files
+
 ## Maintainers
 
 The Laravel.io pastebin is currently maintained by [Dries Vints](https://github.com/driesvints) and [Joe Dixon](https://github.com/joedixon). If you have any questions please don't hesitate to create an issue on this repo.
