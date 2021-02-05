@@ -19,7 +19,7 @@ This is the repository for [the Laravel.io pastebin](https://paste.laravel.io). 
 
 The following tools are required in order to start the installation.
 
-- PHP >=7.4
+- PHP >=8.0
 - [Composer](https://getcomposer.org/download/)
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
 
