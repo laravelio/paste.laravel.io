@@ -56,7 +56,7 @@ Please read our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing or eng
 
 ## Security Vulnerabilities
 
-If you discover a security vulnerability with this project, please send an email immediately to [security@laravel.io](mailto:security@laravel.io). **Do not create an issue for the vulnerability.**
+Please review [our security policy](.github/SECURITY.md) on how to report security vulnerabilities.
 
 ## License
 
