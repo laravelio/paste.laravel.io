@@ -1,4 +1,4 @@
-<div class="flex items-center flex-shrink-0 px-2">
+<div class="flex items-center shrink-0 px-2">
     <a href="https://laravel.io">
         <img class="w-full h-16 dark:hidden" src="{{ asset('images/laravelio.svg') }}" alt="Laravel.io Logo" />
         <img class="w-full h-16 hidden dark:inline" src="{{ asset('images/laravelio-white.svg') }}" alt="Laravel.io Logo" />
@@ -33,12 +33,12 @@
     </a>
 </div>
 
-<div class="flex-grow"></div>
+<div class="grow"></div>
 
 <div class="mt-4 text-center">
     <button
         type="button" aria-pressed="false"
-        class="darkModeToggle bg-gray-300 dark:bg-gray-500 relative inline-flex flex-shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
+        class="darkModeToggle bg-gray-300 dark:bg-gray-500 relative inline-flex shrink-0 h-6 w-11 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500"
     >
         <span class="sr-only">Use setting</span>
 
