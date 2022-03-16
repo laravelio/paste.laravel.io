@@ -1,7 +1,7 @@
 const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-    purge: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
+    content: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
     darkMode: 'class',
     theme: {
         extend: {
@@ -14,12 +14,6 @@ module.exports = {
             screens: {
                 print: { raw: 'print' },
             },
-        },
-    },
-    variants: {
-        extend: {
-            display: ['dark'],
-            translate: ['dark'],
         },
     },
     plugins: [],

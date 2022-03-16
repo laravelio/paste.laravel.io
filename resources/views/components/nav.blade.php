@@ -13,7 +13,7 @@
         <div class="flex-1 w-14" aria-hidden="true">
             <!-- Force sidebar to shrink to fit close icon -->
         </div>
-        <div tabindex="0" class="origin-top-right relative flex-shrink-0 flex flex-col max-w-xs w-full bg-gray-50 dark:bg-gray-700 focus:outline-none">
+        <div tabindex="0" class="origin-top-right relative shrink-0 flex flex-col max-w-xs w-full bg-gray-50 dark:bg-gray-700 focus:outline-none">
             <div class="absolute top-0 left-0 -ml-12 pt-2">
                 <button
                     type="button"
@@ -33,7 +33,7 @@
 </div>
 
 <!-- Static sidebar for desktop -->
-<div :class="{'hidden': !isOpen }" class="lg:flex lg:flex-shrink-0 print:hidden">
+<div :class="{'hidden': !isOpen }" class="lg:flex lg:shrink-0 print:hidden">
     <div class="flex flex-col w-64">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
         <div class="flex flex-col h-0 flex-1 border-r border-gray-200 dark:border-gray-900 bg-gray-50 dark:bg-gray-700">
