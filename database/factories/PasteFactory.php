@@ -2,7 +2,6 @@
 
 namespace Database\Factories;
 
-use App\Models\Paste;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Ramsey\Uuid\Uuid;
 
