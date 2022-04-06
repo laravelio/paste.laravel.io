@@ -18,7 +18,7 @@
     },
     "dependencies": {
         "alpinejs": "^2.8.0",
-        "axios": "^0.21.2",
+        "axios": "^0.25",
         "clipboard": "^2.0.6",
         "lodash": "^4.17.21",
         "highlight.js": "^10.5.0",
