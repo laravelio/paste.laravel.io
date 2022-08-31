@@ -47,7 +47,7 @@
                 <x-heroicon-s-sun class="h-3 w-3 text-gray-400" />
             </span>
 
-            <span class="hidden dark:flex opacity-0 ease-out duration-100 dark:opacity-0 dark:ease-out dark:duration-100 absolute inset-0 h-full w-full items-center justify-center transition-opacity opacity-100 ease-in duration-200 " aria-hidden="true">
+            <span class="hidden dark:flex opacity-0 ease-out duration-100 dark:opacity-100 dark:ease-in dark:duration-200 absolute inset-0 h-full w-full items-center justify-center transition-opacity" aria-hidden="true">
                 <x-heroicon-s-moon class="h-3 w-3 text-gray-600" />
             </span>
         </span>
