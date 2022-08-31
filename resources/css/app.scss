@@ -1,11 +1,11 @@
 @import 'tailwindcss/base';
 
 .light {
-    @import '~highlight.js/styles/a11y-light';
+    @import 'highlight.js/styles/a11y-light';
 }
 
 .dark {
-    @import '~highlight.js/styles/a11y-dark';
+    @import 'highlight.js/styles/a11y-dark';
 }
 
 @import 'tailwindcss/components';

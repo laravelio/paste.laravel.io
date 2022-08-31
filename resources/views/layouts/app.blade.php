@@ -23,9 +23,8 @@
     <title>Pastebin | Laravel.io</title>
 
     <link href="https://rsms.me/inter/inter.css" rel="stylesheet">
-    <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 
-    <script src="{{ mix('js/app.js') }}" defer></script>
+    @vite(['resources/css/app.scss', 'resources/js/app.js'])
 
     @include('layouts.favicons')
     @include('layouts.fathom')
