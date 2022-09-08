@@ -22,7 +22,7 @@
                 >
                     <span class="sr-only">Close sidebar</span>
 
-                    <x-heroicon-o-x class="h-6 w-6 text-white" />
+                    <x-heroicon-o-x-mark class="h-6 w-6 text-white" />
                 </button>
             </div>
             <div class="flex-1 flex flex-col pt-8 pb-4 px-6 overflow-y-auto">

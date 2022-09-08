@@ -15,7 +15,7 @@
                 >
                     <span class="sr-only">Open sidebar</span>
 
-                    <x-heroicon-o-menu class="h-6 w-6" />
+                    <x-heroicon-o-bars-3 class="h-6 w-6" />
                 </button>
             </div>
         </div>
