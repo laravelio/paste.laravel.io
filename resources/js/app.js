@@ -1,4 +1,4 @@
-require('./bootstrap');
+import './bootstrap';
 
 import 'alpinejs';
 
@@ -12,11 +12,7 @@ if (textarea) {
 }
 
 // Highlight code blocks and line numbers
-const hljs = require('highlight.js');
-
-window.hljs = hljs;
-
-require('highlightjs-line-numbers.js');
+import 'highlightjs-line-numbers.js';
 
 document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre code').forEach((block) => {
