@@ -10,8 +10,8 @@
             </x-main>
 
             <x-nav>
-                <x-nav-item label="Save" type="submit" icon="heroicon-o-save" />
-                <x-nav-item label="Reset" type="reset" icon="heroicon-o-ban" />
+                <x-nav-item label="Save" type="submit" icon="heroicon-o-folder-plus" />
+                <x-nav-item label="Reset" type="reset" icon="heroicon-o-no-symbol" />
             </x-nav>
         </div>
     </form>
