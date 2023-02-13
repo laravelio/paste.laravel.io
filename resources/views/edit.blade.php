@@ -6,7 +6,7 @@
 
         <div x-data="{ isOpen: false }" class="h-screen flex overflow-hidden">
             <x-main>
-                @include('_editor')
+                @include('_editor', ['padding' => true])
             </x-main>
 
             <x-nav>
