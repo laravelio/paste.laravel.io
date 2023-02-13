@@ -1,6 +1,6 @@
 <div class="flex flex-col min-w-0 flex-1 overflow-hidden">
     <div class="lg:hidden print:hidden">
-        <div class="flex items-center justify-between bg-gray-50 dark:bg-gray-700 border-b border-gray-200 dark:border-gray-900 px-4 py-1.5">
+        <div class="flex items-center justify-between bg-gray-50 dark:bg-zinc-800 border-b border-gray-200 dark:border-gray-900 px-4 py-1.5">
             <div>
                 <a href="{{ route('home') }}">
                     <img class="h-8 w-auto dark:hidden" src="{{ asset('images/laravelio-icon.svg') }}" alt="Laravel.io">

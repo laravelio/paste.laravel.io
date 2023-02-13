@@ -1,0 +1,23 @@
+.light {
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+  *::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-gray-200/50 rounded-full border-solid border-white
+  }
+}
+
+.dark {
+  *::-webkit-scrollbar {
+    width: 13px;
+  }
+  *::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  *::-webkit-scrollbar-thumb {
+    @apply bg-zinc-800/50 rounded-full border-solid border-zinc-900
+  }
+}

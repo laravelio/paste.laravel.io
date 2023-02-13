@@ -29,7 +29,7 @@
     @include('layouts.favicons')
     @include('layouts.fathom')
 </head>
-<body class="dark:bg-dark">
+<body class="dark:bg-zinc-900">
 
 @yield('content')
 
