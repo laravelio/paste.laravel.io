@@ -50,3 +50,9 @@ document.addEventListener("keydown", keyDownEvent => {
         document.getElementById('save').click();
     }
 });
+document.addEventListener("keydown", keyDownEvent => {
+    if (keyDownEvent.ctrlKey && keyDownEvent.code === "KeyA") {
+        keyDownEvent.preventDefault();
+        window.getSelection().selectAllChildren(document.getElementById('code'));
+    }
+});
