@@ -11,7 +11,7 @@ class PastebinTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    public function it_shows_the_pastebin()
+    public function it_shows_the_pastebin(): void
     {
         $this->get('/')
             ->assertStatus(200)
@@ -20,7 +20,7 @@ class PastebinTest extends TestCase
     }
 
     /** @test */
-    public function users_can_create_pastes()
+    public function users_can_create_pastes(): void
     {
         $this->post('/', ['code' => 'My paste'])->assertStatus(302);
 
@@ -28,7 +28,7 @@ class PastebinTest extends TestCase
     }
 
     /** @test */
-    public function users_can_see_pastes()
+    public function users_can_see_pastes(): void
     {
         $paste = Paste::factory()->create();
 
@@ -37,7 +37,7 @@ class PastebinTest extends TestCase
     }
 
     /** @test */
-    public function users_can_see_raw_pastes()
+    public function users_can_see_raw_pastes(): void
     {
         $paste = Paste::factory()->create();
 
@@ -46,7 +46,7 @@ class PastebinTest extends TestCase
     }
 
     /** @test */
-    public function users_can_see_the_fork_page()
+    public function users_can_see_the_fork_page(): void
     {
         $paste = Paste::factory()->create();
 
@@ -55,7 +55,7 @@ class PastebinTest extends TestCase
     }
 
     /** @test */
-    public function users_can_fork_pastes()
+    public function users_can_fork_pastes(): void
     {
         $paste = Paste::factory()->create();
 

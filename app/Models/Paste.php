@@ -46,7 +46,7 @@ class Paste extends Model
      *
      * @return string
      */
-    public function getRouteKeyName()
+    public function getRouteKeyName(): string
     {
         return 'hash';
     }

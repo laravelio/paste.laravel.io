@@ -12,7 +12,7 @@ class PasteFactory extends Factory
      *
      * @return array
      */
-    public function definition()
+    public function definition(): array
     {
         return [
             'hash' => Uuid::uuid4()->toString(),
