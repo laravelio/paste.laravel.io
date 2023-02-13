@@ -11,7 +11,7 @@
 
             <x-nav>
                 <x-nav-item label="Save" type="submit" icon="heroicon-o-folder-plus" />
-                <x-nav-item label="Reset" type="reset" icon="heroicon-o-no-symbol" />
+                <x-nav-item label="Reset" type="reset" icon="iconoir-delete-circle" />
                 <x-nav-item label="Back" :link="route('show', $paste->hash)" icon="heroicon-o-arrow-left-circle" />
             </x-nav>
         </div>

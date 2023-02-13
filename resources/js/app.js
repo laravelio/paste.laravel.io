@@ -42,3 +42,11 @@ for (let i = 0; i < darkModeToggles.length; i++) {
         }
     };
 }
+
+// Shortcut to save
+document.addEventListener("keydown", keyDownEvent => {
+    if (keyDownEvent.ctrlKey && keyDownEvent.code === "KeyS") {
+        keyDownEvent.preventDefault();
+        document.getElementById('save').click();
+    }
+});
