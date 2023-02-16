@@ -21,9 +21,9 @@
         </div>
     </div>
     <div class="flex-1 relative z-0 flex overflow-hidden">
-        <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none" tabindex="0">
+        <main class="flex-1 relative z-0 focus:outline-none" tabindex="0">
             <!-- Start main area-->
-            <div class="absolute inset-0">
+            <div class="absolute inset-0 overflow-auto">
                 {!! $slot !!}
             </div>
             <!-- End main area -->

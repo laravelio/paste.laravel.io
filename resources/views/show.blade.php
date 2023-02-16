@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div x-data="{ isOpen: false }" class="h-screen flex overflow-hidden">
+    <div x-data="{ isOpen: false }" class="h-screen flex">
         <x-main>
             <pre
                 id="code"
