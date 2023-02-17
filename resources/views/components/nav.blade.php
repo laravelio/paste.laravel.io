@@ -36,7 +36,7 @@
 <div :class="{'hidden': !isOpen }" class="lg:flex lg:shrink-0 print:hidden">
     <div class="flex flex-col w-72 p-4 pl-2">
         <!-- Sidebar component, swap this element with another sidebar if you like -->
-        <div class="flex flex-col h-0 flex-1 bg-gray-50 dark:bg-zinc-800 rounded-2xl">
+        <div class="flex flex-col h-0 flex-1 bg-gray-50 dark:bg-zinc-800 rounded-2xl select-none">
             <div class="flex-1 flex flex-col pt-8 pb-4 px-6 overflow-y-auto">
                 <x-sidebar>{!! $slot !!}</x-sidebar>
             </div>
