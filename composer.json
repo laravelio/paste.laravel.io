@@ -15,6 +15,7 @@
         "laravel/tinker": "^2.7",
         "league/flysystem-aws-s3-v3": "^3.0",
         "ramsey/uuid": "^4.3",
+        "sentry/sentry-laravel": "^3.4",
         "spatie/laravel-ignition": "^1.1"
     },
     "require-dev": {
@@ -27,7 +28,10 @@
     "config": {
         "optimize-autoloader": true,
         "preferred-install": "dist",
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "php-http/discovery": true
+        }
     },
     "extra": {
         "laravel": {
