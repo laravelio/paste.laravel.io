@@ -6,7 +6,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.8",
-        "postcss": "^8.4.8",
+        "postcss": "^8.4.31",
         "sass": "^1.32.4"
     },
     "dependencies": {
