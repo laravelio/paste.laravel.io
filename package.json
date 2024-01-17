@@ -10,7 +10,7 @@
         "sass": "^1.32.4"
     },
     "dependencies": {
-        "alpinejs": "^2.8.0",
+        "alpinejs": "^3.13.3",
         "clipboard": "^2.0.6",
         "highlight.js": "^10.5.0",
         "highlightjs-line-numbers.js": "^2.8.0",
