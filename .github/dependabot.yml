@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      day: monday
+      day: wednesday
     groups:
       production-dependencies:
         dependency-type: "production"
@@ -24,7 +24,7 @@ updates:
     directory: "/"
     schedule:
       interval: weekly
-      day: monday
+      day: wednesday
     groups:
       production-dependencies:
         dependency-type: "production"
