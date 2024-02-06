@@ -27,7 +27,7 @@ jobs:
         run: npm run build
 
       - name: Execute tests
-        run: vendor/bin/phpunit --verbose
+        run: vendor/bin/phpunit
 
       - name: Deploy
         if: github.ref_name == 'main'
