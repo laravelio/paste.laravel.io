@@ -19,9 +19,9 @@ if (textarea) {
 import 'highlightjs-line-numbers.js';
 
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelectorAll('pre code').forEach((block) => {
-        hljs.highlightBlock(block);
-        hljs.lineNumbersBlock(block);
+    document.querySelectorAll('pre code').forEach((el) => {
+        hljs.highlightElement(el);
+        hljs.lineNumbersBlock(el);
     });
 });
 
