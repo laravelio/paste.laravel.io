@@ -15,7 +15,7 @@
         "laravel/tinker": "^2.8",
         "league/flysystem-aws-s3-v3": "^3.0",
         "ramsey/uuid": "^4.3",
-        "sentry/sentry-laravel": "^3.4",
+        "sentry/sentry-laravel": "^4.2",
         "spatie/laravel-ignition": "^2.0"
     },
     "require-dev": {
