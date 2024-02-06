@@ -22,7 +22,7 @@
         "doctrine/dbal": "^3.5",
         "fakerphp/faker": "^1.9.1",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
+        "nunomaduro/collision": "^7.10",
         "phpunit/phpunit": "^9.5.10"
     },
     "config": {
