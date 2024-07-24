@@ -20,12 +20,12 @@ class Paste extends Model
 
     public static function fromRequest(Request $request): self
     {
-        return static::createNew(new static(), $request);
+        return static::createNew(new static, $request);
     }
 
     public static function fromFork(self $fork, Request $request): self
     {
-        $paste = new static();
+        $paste = new static;
         $paste->parent_id = $fork->id;
 
         return static::createNew($paste, $request);
