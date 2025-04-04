@@ -11,7 +11,7 @@
         "php": "8.3.*",
         "blade-ui-kit/blade-heroicons": "^2.3",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^11.5",
+        "laravel/framework": "^12.7",
         "laravel/tinker": "^2.9",
         "league/flysystem-aws-s3-v3": "^3.0",
         "ramsey/uuid": "^4.3",
