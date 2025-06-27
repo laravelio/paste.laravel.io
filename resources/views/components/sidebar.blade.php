@@ -44,11 +44,11 @@
 
         <span class="translate-x-0 dark:translate-x-5 relative inline-block h-5 w-5 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200">
             <span class="dark:hidden opacity-100 ease-in duration-200 dark:opacity-0 dark:ease-out dark:duration-100 absolute inset-0 h-full w-full flex items-center justify-center transition-opacity" aria-hidden="true">
-                <x-heroicon-s-sun class="h-3 w-3 text-gray-400" />
+                <x-heroicon-s-sun class="h-6 w-6 text-gray-400" />
             </span>
 
             <span class="hidden dark:flex opacity-0 ease-out duration-100 dark:opacity-100 dark:ease-in dark:duration-200 absolute inset-0 h-full w-full items-center justify-center transition-opacity" aria-hidden="true">
-                <x-heroicon-s-moon class="h-3 w-3 text-gray-600" />
+                <x-heroicon-s-moon class="h-6 w-6 text-gray-600" />
             </span>
         </span>
     </button>
