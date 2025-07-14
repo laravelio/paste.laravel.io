@@ -1632,16 +1632,16 @@
         },
         {
             "name": "laravel/nightwatch",
-            "version": "v1.10.3",
+            "version": "v1.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/nightwatch.git",
-                "reference": "90ec0f78fe09b5328a36b03d8d42d0ef5ecc61d1"
+                "reference": "075c2cd68cb2fbfa460799d1d24c10d0abbdb2fb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/nightwatch/zipball/90ec0f78fe09b5328a36b03d8d42d0ef5ecc61d1",
-                "reference": "90ec0f78fe09b5328a36b03d8d42d0ef5ecc61d1",
+                "url": "https://api.github.com/repos/laravel/nightwatch/zipball/075c2cd68cb2fbfa460799d1d24c10d0abbdb2fb",
+                "reference": "075c2cd68cb2fbfa460799d1d24c10d0abbdb2fb",
                 "shasum": ""
             },
             "require": {
@@ -1657,11 +1657,14 @@
                 "symfony/http-foundation": "^6.0|^7.0"
             },
             "require-dev": {
+                "aws/aws-sdk-php": "^3.349",
                 "ext-pdo": "*",
                 "guzzlehttp/guzzle": "^7.0",
                 "guzzlehttp/psr7": "^2.0",
                 "laravel/horizon": "^5.4",
                 "laravel/pint": "1.21.0",
+                "laravel/vapor-core": "^2.38.2",
+                "livewire/livewire": "^2.0|^3.0",
                 "mockery/mockery": "^1.0",
                 "mongodb/laravel-mongodb": "^4.0|^5.0",
                 "orchestra/testbench": "^8.0|^9.0|^10.0",
@@ -1670,6 +1673,7 @@
                 "phpstan/phpstan": "^1.0",
                 "phpunit/phpunit": "^10.0|^11.0",
                 "ramsey/uuid": "^4.0",
+                "singlestoredb/singlestoredb-laravel": "^1.0|^2.0",
                 "spatie/laravel-ignition": "^2.0",
                 "symfony/mailer": "^6.0|^7.0",
                 "symfony/mime": "^6.0|^7.0",
@@ -1710,20 +1714,20 @@
                 "issues": "https://github.com/laravel/nightwatch/issues",
                 "source": "https://github.com/laravel/nightwatch"
             },
-            "time": "2025-07-02T00:39:56+00:00"
+            "time": "2025-07-08T01:29:53+00:00"
         },
         {
             "name": "laravel/prompts",
-            "version": "v0.3.5",
+            "version": "v0.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/prompts.git",
-                "reference": "57b8f7efe40333cdb925700891c7d7465325d3b1"
+                "reference": "86a8b692e8661d0fb308cec64f3d176821323077"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/prompts/zipball/57b8f7efe40333cdb925700891c7d7465325d3b1",
-                "reference": "57b8f7efe40333cdb925700891c7d7465325d3b1",
+                "url": "https://api.github.com/repos/laravel/prompts/zipball/86a8b692e8661d0fb308cec64f3d176821323077",
+                "reference": "86a8b692e8661d0fb308cec64f3d176821323077",
                 "shasum": ""
             },
             "require": {
@@ -1767,9 +1771,9 @@
             "description": "Add beautiful and user-friendly forms to your command-line applications.",
             "support": {
                 "issues": "https://github.com/laravel/prompts/issues",
-                "source": "https://github.com/laravel/prompts/tree/v0.3.5"
+                "source": "https://github.com/laravel/prompts/tree/v0.3.6"
             },
-            "time": "2025-02-11T13:34:40+00:00"
+            "time": "2025-07-07T14:17:42+00:00"
         },
         {
             "name": "laravel/serializable-closure",
