@@ -33,6 +33,19 @@ jobs:
       - name: Execute tests
         run: vendor/bin/phpunit
 
+  dependabot:
+    needs: [tests]
+    permissions:
+      pull-requests: write
+      contents: write
+    uses: driesvints/github-workflows/.github/workflows/dependabot.yml@main
+    secrets:
+      gh_token: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: [tests]
+    runs-on: ubuntu-latest
+    steps:
       - name: Deploy
-        if: github.ref_name == 'main'
+        if: github.repository == 'laravelio/paste.laravel.io' && github.ref_name == 'main'
         run: curl ${{ secrets.ENVOYER_HOOK }}?sha=${{ github.sha }}
