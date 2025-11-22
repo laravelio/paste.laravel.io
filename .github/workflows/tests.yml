@@ -48,4 +48,4 @@ jobs:
     steps:
       - name: Deploy
         if: github.repository == 'laravelio/paste.laravel.io' && github.ref_name == 'main'
-        run: curl -d POST ${{ secrets.DEPLOY_HOOK }}?sha=${{ github.sha }}
+        run: curl -d POST ${{ secrets.DEPLOY_HOOK }}?commit_hash=${{ github.sha }}
