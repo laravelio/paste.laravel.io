@@ -1,12 +1,32 @@
 {
   "scripts": {
     "setup": [
-      "herd link",
-      "herd isolate 8.4"
+      "herd link --update-env",
+      "herd secure",
+      "herd isolate 8.4",
+      "herd composer install",
+      "herd php artisan migrate",
+      "herd php artisan storage:link --force",
+      "npm install"
     ],
-    "archive": "herd unlink"
+    "archive": [
+      "herd unsecure",
+      "herd unlink"
+    ],
+    "run": [
+      {
+        "label": "Vite",
+        "command": "npm run dev",
+        "runMode": "replace",
+        "autostart": true
+      },
+      {
+        "label": "Tests",
+        "command": "herd pest -p"
+      }
+    ]
   },
   "preview": {
-    "url": "http://{{folder}}.test"
+    "url": "https://{{folder}}.test"
   }
 }
