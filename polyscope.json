@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "setup": [
+      "herd link",
+      "herd isolate 8.4"
+    ],
+    "archive": "herd unlink"
+  },
+  "preview": {
+    "url": "http://{{folder}}.test"
+  }
+}
