@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+
+# Runtime directories may have been removed while working in a previous session.
+mkdir -p storage/framework/{cache/data,sessions,views} storage/logs bootstrap/cache
+# Read this orb's current environment rather than a previous session's cached config.
+php artisan config:clear --no-interaction

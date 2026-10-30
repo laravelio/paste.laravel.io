@@ -38,6 +38,12 @@ The following tools are required in order to start the installation.
 
 You can now visit the app in your browser by visiting [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
+### Amp orbs
+
+Amp runs `.agents/setup` when preparing a fresh orb snapshot. It installs PHP 8.4 and Composer, installs locked PHP and Node dependencies using the orb's Node.js and npm, and builds the assets. If `.env` is missing, setup creates it with a local SQLite database and log-based mail delivery. Existing environment files, app keys, and database records are preserved.
+
+`.agents/resume` repairs runtime directories and clears cached configuration without reinstalling dependencies. Run `amp orb services ensure` to start the supervised web server declared in `.amp/services.yaml` and obtain its preview URL. After front-end changes, run `npm run build` to refresh the preview's assets.
+
 ## Commands
 
 Command | Description

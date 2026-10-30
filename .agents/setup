@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(dirname "${BASH_SOURCE[0]}")/.."
+TIMEFORMAT='Completed in %3R seconds'
+
+printf '\n==> Installing PHP 8.4 and required extensions\n'
+packages=(ca-certificates curl unzip php8.4-cli php8.4-curl php8.4-mbstring php8.4-mysql php8.4-sqlite3 php8.4-xml php8.4-zip)
+missing=()
+for package in "${packages[@]}"; do
+    if ! dpkg-query -W -f='${Status}' "$package" 2>/dev/null | grep -qx 'install ok installed'; then
+        missing+=("$package")
+    fi
+done
+
+if ((${#missing[@]})); then
+    if [[ ! -f /usr/share/keyrings/sury-php.gpg ]]; then
+        curl -fsSL https://packages.sury.org/php/apt.gpg | sudo tee /usr/share/keyrings/sury-php.gpg > /dev/null
+    fi
+    if [[ ! -f /etc/apt/sources.list.d/sury-php.list ]]; then
+        echo 'deb [signed-by=/usr/share/keyrings/sury-php.gpg] https://packages.sury.org/php/ bookworm main' | sudo tee /etc/apt/sources.list.d/sury-php.list > /dev/null
+    fi
+    time sudo apt-get update -qq
+    time sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends "${missing[@]}"
+fi
+php -r 'exit(PHP_MAJOR_VERSION === 8 && PHP_MINOR_VERSION === 4 ? 0 : 1);'
+
+printf '\n==> Installing Composer\n'
+if ! command -v composer > /dev/null; then
+    installer_dir="$(mktemp -d)"
+    trap 'rm -rf "$installer_dir"' EXIT
+    curl -fsSL https://getcomposer.org/installer -o "$installer_dir/composer-setup.php"
+    expected="$(curl -fsSL https://composer.github.io/installer.sig)"
+    actual="$(php -r 'echo hash_file("sha384", $argv[1]);' "$installer_dir/composer-setup.php")"
+    [[ "$expected" == "$actual" ]]
+    php "$installer_dir/composer-setup.php" --2 --install-dir="$installer_dir" --filename=composer
+    sudo install -m 0755 "$installer_dir/composer" /usr/local/bin/composer
+fi
+
+printf '\n==> Preparing local Laravel environment\n'
+mkdir -p storage/framework/{cache/data,sessions,views} storage/logs bootstrap/cache
+if [[ ! -f .env ]]; then
+    cp -- .env.example .env
+    sed -i -e 's/^DB_CONNECTION=.*/DB_CONNECTION=sqlite/' \
+        -e "s|^DB_DATABASE=.*|DB_DATABASE=$PWD/database/database.sqlite|" \
+        -e 's/^MAIL_MAILER=.*/MAIL_MAILER=log/' .env
+fi
+
+printf '\n==> Installing locked PHP dependencies\n'
+time composer install --prefer-dist --no-interaction --no-progress
+php artisan config:clear --no-interaction
+if ! grep -qE '^APP_KEY=.+$' .env; then
+    php artisan key:generate --no-interaction
+fi
+# Only prepare the local SQLite database; never migrate an externally configured database.
+if [[ "$(php artisan tinker --execute='echo config("database.default");')" == sqlite ]]; then
+    [[ -f database/database.sqlite ]] || touch database/database.sqlite
+    time php artisan migrate --force --no-interaction
+fi
+
+printf '\n==> Installing locked Node dependencies and building assets\n'
+node --version
+npm --version
+time npm ci --no-audit --no-fund
+time npm run build

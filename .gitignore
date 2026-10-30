@@ -9,3 +9,5 @@
 .env
 .env.backup
 .phpunit.result.cache
+/.amp/portals/*
+/database/database.sqlite
