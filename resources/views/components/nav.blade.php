@@ -13,12 +13,12 @@
         <div class="flex-1 w-14" aria-hidden="true">
             <!-- Force sidebar to shrink to fit close icon -->
         </div>
-        <div tabindex="0" class="origin-top-right relative shrink-0 flex flex-col max-w-xs w-full bg-gray-50 dark:bg-gray-700 focus:outline-none">
+        <div tabindex="0" class="origin-top-right relative shrink-0 flex flex-col max-w-xs w-full bg-gray-50 dark:bg-gray-700 focus:outline-hidden">
             <div class="absolute top-0 left-0 -ml-12 pt-2">
                 <button
                     type="button"
                     @click="isOpen = false"
-                    class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                    class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-hidden focus:ring-2 focus:ring-inset focus:ring-white"
                 >
                     <span class="sr-only">Close sidebar</span>
 

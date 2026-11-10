@@ -4,13 +4,14 @@ namespace Tests\Feature;
 
 use App\Models\Paste;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
+use PHPUnit\Framework\Attributes\Test;
 use Tests\TestCase;
 
 class PastebinTest extends TestCase
 {
     use DatabaseMigrations;
 
-    /** @test */
+    #[Test]
     public function it_shows_the_pastebin(): void
     {
         $this->get('/')
@@ -19,7 +20,7 @@ class PastebinTest extends TestCase
             ->assertSee('Reset');
     }
 
-    /** @test */
+    #[Test]
     public function users_can_create_pastes(): void
     {
         $this->post('/', ['code' => 'My paste'])->assertStatus(302);
@@ -27,7 +28,7 @@ class PastebinTest extends TestCase
         $this->assertDatabaseHas('pastes', ['code' => 'My paste']);
     }
 
-    /** @test */
+    #[Test]
     public function users_can_see_pastes(): void
     {
         $paste = Paste::factory()->create();
@@ -36,7 +37,7 @@ class PastebinTest extends TestCase
             ->assertSee($paste->code);
     }
 
-    /** @test */
+    #[Test]
     public function users_can_see_raw_pastes(): void
     {
         $paste = Paste::factory()->create();
@@ -45,7 +46,7 @@ class PastebinTest extends TestCase
             ->assertSee($paste->code);
     }
 
-    /** @test */
+    #[Test]
     public function users_can_see_the_fork_page(): void
     {
         $paste = Paste::factory()->create();
@@ -54,7 +55,7 @@ class PastebinTest extends TestCase
             ->assertSee($paste->code);
     }
 
-    /** @test */
+    #[Test]
     public function users_can_fork_pastes(): void
     {
         $paste = Paste::factory()->create();

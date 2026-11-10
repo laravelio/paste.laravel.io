@@ -1,0 +1,41 @@
+@import 'tailwindcss';
+
+@source '../views';
+@source '../js';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --color-dark: #2b2b2b;
+    --font-sans: 'Inter var', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+@layer base {
+    input::placeholder,
+    textarea::placeholder {
+        color: var(--color-gray-400);
+    }
+
+    button:not(:disabled),
+    [role='button']:not(:disabled) {
+        cursor: pointer;
+    }
+}
+
+.light {
+    @import 'highlight.js/styles/a11y-light.css';
+}
+
+.dark {
+    @import 'highlight.js/styles/a11y-dark.css';
+}
+
+.hljs {
+    @apply bg-white;
+}
+.hljs-ln td.hljs-ln-numbers {
+    @apply text-gray-400 pr-3 inline-block w-full text-right;
+}
+.hljs-ln td.hljs-ln-numbers div {
+    @apply inline-block px-2 w-full;
+}

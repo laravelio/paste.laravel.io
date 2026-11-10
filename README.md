@@ -25,7 +25,10 @@ The following tools are required in order to start the installation.
 
 - PHP 8.4
 - [Composer](https://getcomposer.org/download/)
+- Node.js 20.19+ or 22.12+ (required by Vite 8)
 - [NPM](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+
+Tailwind CSS 4 requires Safari 16.4+, Chrome 111+, or Firefox 128+.
 
 ## Installation
 
