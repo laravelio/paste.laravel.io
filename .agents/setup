@@ -17,8 +17,10 @@ if ((${#missing[@]})); then
     if [[ ! -f /usr/share/keyrings/sury-php.gpg ]]; then
         curl -fsSL https://packages.sury.org/php/apt.gpg | sudo tee /usr/share/keyrings/sury-php.gpg > /dev/null
     fi
-    if [[ ! -f /etc/apt/sources.list.d/sury-php.list ]]; then
-        echo 'deb [signed-by=/usr/share/keyrings/sury-php.gpg] https://packages.sury.org/php/ bookworm main' | sudo tee /etc/apt/sources.list.d/sury-php.list > /dev/null
+    source /etc/os-release
+    php_source="deb [signed-by=/usr/share/keyrings/sury-php.gpg] https://packages.sury.org/php/ ${VERSION_CODENAME} main"
+    if ! grep -Fqx "$php_source" /etc/apt/sources.list.d/sury-php.list 2>/dev/null; then
+        echo "$php_source" | sudo tee /etc/apt/sources.list.d/sury-php.list > /dev/null
     fi
     time sudo apt-get update -qq
     time sudo env DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends "${missing[@]}"
